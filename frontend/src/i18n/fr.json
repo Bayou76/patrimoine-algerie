@@ -16,15 +16,19 @@
     "sections": {
       "visa": {
         "title": "Visa et entrée sur le territoire",
-        "body": "La plupart des ressortissants européens et nord-américains doivent obtenir un visa avant l'arrivée. La demande se fait auprès du consulat d'Algérie du pays de résidence.\n\nDepuis 2023, un e-visa touristique est disponible pour certains pays via le site officiel du ministère des Affaires étrangères. Les Algériens de la diaspora et leurs enfants (moins de 18 ans) sont exemptés."
+        "body": "Les conditions d’entrée dépendent de la nationalité du voyageur. Vérifiez les règles actuelles auprès du consulat d’Algérie de votre pays de résidence ou des autorités officielles avant votre départ."
       },
       "best_season": {
         "title": "Meilleure saison selon la région",
-        "body": "🏖️ Côte méditerranéenne (Alger, Oran, Annaba, Tipaza) : mai à octobre. Étés chauds mais supportables.\n\n🏔️ Villes intérieures (Constantine, Tlemcen, Sétif) : avril à juin, puis septembre-octobre.\n\n🏜️ Grand Sud (Hoggar, Tassili, Timimoun) : d'octobre à avril impérativement. L'été y est meurtrier (45-50°C)."
+        "body": "🏖️ Côte méditerranéenne (Alger, Oran, Annaba, Tipaza) : mai à octobre. Étés chauds mais supportables.\n\n🏔️ Villes intérieures (Constantine, Tlemcen, Sétif) : avril à juin, puis septembre-octobre.\n\n🏜️ Grand Sud (Hoggar, Tassili, Timimoun) : d'octobre à avril impérativement. Les températures peuvent dépasser 45 °C dans certaines zones sahariennes en été. Les visites sont fortement déconseillées pendant les heures les plus chaudes."
       },
       "transport": {
         "title": "Se déplacer",
         "body": "Air Algérie relie toutes les grandes villes (vols intérieurs abordables). Le train est fiable entre Alger, Oran et Constantine.\n\nPour le Grand Sud, la voiture avec chauffeur ou l'agence locale sont fortement recommandées. Louer une voiture 4x4 est possible mais l'expérience d'un guide local vaut de l'or.\n\nTaxis et VTC (Yassir) présents dans les grandes villes."
+      },
+      "travel_times": {
+        "title": "Temps de trajet indicatifs",
+        "body": "Alger → Tipaza : environ 1 h.\n\nConstantine → Timgad : environ 2 h.\n\nSétif → Djemila : environ 1 h.\n\nTamanrasset → Assekrem : plusieurs heures avec un guide.\n\nLes durées varient selon la circulation, l’état des routes et les conditions locales."
       },
       "safety": {
         "title": "Sécurité",
@@ -32,7 +36,7 @@
       },
       "money": {
         "title": "Monnaie et paiements",
-        "body": "La monnaie est le dinar algérien (DZD). Il ne s'exporte pas — changez sur place.\n\nLe change officiel se fait dans les banques et bureaux de change agréés, mais le taux du marché parallèle est souvent bien plus avantageux (renseignez-vous localement).\n\nLes cartes bancaires étrangères sont peu acceptées hors des grands hôtels. Prévoyez du liquide."
+        "body": "La monnaie est le dinar algérien (DZD). Il ne s'exporte pas — changez sur place.\n\nLe change officiel est disponible auprès des établissements agréés. Les pratiques de change non officielles peuvent présenter des risques et ne sont pas recommandées.\n\nLes cartes bancaires étrangères sont peu acceptées hors des grands hôtels. Prévoyez du liquide."
       },
       "ramadan": {
         "title": "Voyager pendant le Ramadan",
@@ -45,6 +49,14 @@
       "etiquette": {
         "title": "Us et coutumes",
         "body": "L'Algérie est un pays chaleureux et hospitalier. Le thé à la menthe est un rituel d'accueil, refuser peut vexer.\n\nTenue correcte demandée dans les mosquées et lieux religieux (épaules et jambes couvertes). Pour photographier des personnes, toujours demander l'autorisation.\n\nLe français est très parlé, l'arabe (fusha et darija) est la langue nationale, le tamazight aussi langue officielle."
+      },
+      "prep": {
+        "title": "À préparer",
+        "body": "• Photocopie du passeport\n• Assurance voyage\n• Application de traduction arabe/français\n• Batterie externe\n• Eau pour les excursions\n• Chaussures adaptées pour les sites antiques"
+      },
+      "heritage": {
+        "title": "Préserver les sites",
+        "body": "• Ne touchez pas les mosaïques.\n• Ne déplacez pas de pierres ni d’objets.\n• Respectez les zones interdites et les consignes sur place.\n• Emportez vos déchets avec vous."
       }
     }
   },
@@ -115,6 +127,7 @@
     "back_to_list": "← Retour à la liste",
     "history": "Histoire",
     "how_to_visit": "Comment visiter",
+    "prepare_visit": "Préparer ma visite",
     "gallery": "Galerie",
     "reviews_count": "Avis ({{count}})",
     "opening_hours": "Horaires",

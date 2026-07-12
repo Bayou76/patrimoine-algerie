@@ -16,15 +16,19 @@
     "sections": {
       "visa": {
         "title": "Visa and entry",
-        "body": "Most European and North American citizens need a visa before arrival, obtained through the Algerian consulate in their country of residence.\n\nSince 2023, an e-visa for tourism is available to selected countries via the official Foreign Ministry portal. Algerian diaspora members and their children (under 18) are exempt."
+        "body": "Entry requirements depend on the traveller’s nationality. Before departure, check the current rules with the Algerian consulate in your country of residence or through official authorities."
       },
       "best_season": {
         "title": "Best season by region",
-        "body": "🏖️ Mediterranean coast (Algiers, Oran, Annaba, Tipaza): May to October. Hot but bearable summers.\n\n🏔️ Inland cities (Constantine, Tlemcen, Sétif): April–June, then September–October.\n\n🏜️ Deep South (Hoggar, Tassili, Timimoun): October to April only. Summer temperatures reach 45–50°C."
+        "body": "🏖️ Mediterranean coast (Algiers, Oran, Annaba, Tipaza): May to October. Hot but bearable summers.\n\n🏔️ Inland cities (Constantine, Tlemcen, Sétif): April–June, then September–October.\n\n🏜️ Deep South (Hoggar, Tassili, Timimoun): October to April only. Temperatures can exceed 45°C in some Saharan areas in summer. Visits are strongly discouraged during the hottest hours."
       },
       "transport": {
         "title": "Getting around",
         "body": "Air Algérie connects all major cities (affordable domestic flights). The train is reliable between Algiers, Oran and Constantine.\n\nFor the Deep South, a car with driver or a local agency is strongly recommended. Renting a 4x4 is possible but a local guide adds a lot of value.\n\nTaxis and ride-hailing (Yassir) are widely available in cities."
+      },
+      "travel_times": {
+        "title": "Indicative travel times",
+        "body": "Algiers → Tipaza: about 1 hour.\n\nConstantine → Timgad: about 2 hours.\n\nSétif → Djemila: about 1 hour.\n\nTamanrasset → Assekrem: several hours with a guide.\n\nTimes vary with traffic, road conditions and local circumstances."
       },
       "safety": {
         "title": "Safety",
@@ -32,7 +36,7 @@
       },
       "money": {
         "title": "Currency and payments",
-        "body": "The currency is the Algerian dinar (DZD). It cannot be exported — exchange on arrival.\n\nOfficial exchange happens in banks and licensed bureaux, but the parallel market rate is often significantly better (ask locally).\n\nForeign bank cards are rarely accepted outside major hotels. Cash is king."
+        "body": "The currency is the Algerian dinar (DZD). It cannot be exported — exchange on arrival.\n\nOfficial exchange is available through licensed institutions. Unofficial exchange practices may carry risks and are not recommended.\n\nForeign bank cards are rarely accepted outside major hotels. Cash is king."
       },
       "ramadan": {
         "title": "Travelling during Ramadan",
@@ -45,6 +49,14 @@
       "etiquette": {
         "title": "Customs and etiquette",
         "body": "Algerians are warm and hospitable. Mint tea is a welcome ritual — refusing may offend.\n\nModest dress is required in mosques and religious sites (shoulders and legs covered). Always ask before photographing people.\n\nFrench is widely spoken, Arabic (fusha and darija) is the national language, Tamazight is also an official language."
+      },
+      "prep": {
+        "title": "What to pack",
+        "body": "• Passport photocopy\n• Travel insurance\n• Arabic/French translation app\n• Power bank\n• Water for excursions\n• Suitable shoes for ancient sites"
+      },
+      "heritage": {
+        "title": "Protect the sites",
+        "body": "• Do not touch mosaics.\n• Do not move stones or objects.\n• Respect restricted areas and on-site instructions.\n• Take your rubbish with you."
       }
     }
   },
@@ -115,6 +127,7 @@
     "back_to_list": "← Back to the list",
     "history": "History",
     "how_to_visit": "How to visit",
+    "prepare_visit": "Plan my visit",
     "gallery": "Gallery",
     "reviews_count": "Reviews ({{count}})",
     "opening_hours": "Opening hours",

@@ -166,6 +166,13 @@ function SiteDetailPage() {
               title={translation?.name}
               text={translation?.description}
             />
+            <Link
+              to="/infos-pratiques"
+              className="inline-flex items-center gap-2 rounded-lg bg-teal-950 px-4 py-2 text-sm font-700 text-white transition hover:bg-teal-800"
+            >
+              <span aria-hidden="true">📍</span>
+              {t('detail.prepare_visit')}
+            </Link>
           </div>
         </Reveal>
 

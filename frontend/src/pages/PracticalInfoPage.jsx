@@ -20,11 +20,14 @@ const SECTIONS = [
   { key: 'visa', icon: '🛂' },
   { key: 'best_season', icon: '☀️' },
   { key: 'transport', icon: '🚗' },
+  { key: 'travel_times', icon: '⏱️' },
   { key: 'safety', icon: '🛡️' },
   { key: 'money', icon: '💵' },
   { key: 'ramadan', icon: '🌙' },
   { key: 'connectivity', icon: '📶' },
   { key: 'etiquette', icon: '🤝' },
+  { key: 'prep', icon: '🎒' },
+  { key: 'heritage', icon: '🏛️' },
 ]
 
 function PracticalInfoPage() {
@@ -57,7 +60,7 @@ function PracticalInfoPage() {
     <div>
       {/* Hero sombre */}
       <div className="relative bg-teal-950 px-6 py-20 text-center">
-        <div className="absolute inset-0 bg-gradient-to-b from-teal-950/40 to-teal-950" />
+        <div className="absolute inset-0 bg-linear-to-b from-teal-950/40 to-teal-950" />
         <div className="relative">
           <h1 className="font-display font-800 text-4xl sm:text-5xl text-white tracking-tight">
             ℹ️ {t('practical_info.title')}
