@@ -221,6 +221,20 @@
     "passport": "Athar Passport",
     "passport_progress": "{{visited}} / {{total}} sites discovered"
   },
+  "my_trip": {
+    "cta_title": "My trip",
+    "cta_subtitle": "Build your personal itinerary from your favorites.",
+    "title": "My trip",
+    "subtitle": "Your personal, private itinerary — visible to you only.",
+    "add_from_favorites": "Add a favorite to my trip",
+    "no_favorites_yet": "Add sites to your favorites first so you can include them here.",
+    "all_favorites_added": "All your favorites are already in your trip.",
+    "choose_site": "Choose a site…",
+    "add": "Add",
+    "remove": "Remove",
+    "empty": "Your trip is empty for now. Add sites from your favorites above.",
+    "note_placeholder": "Add a note (hours, transport, ideas…)"
+  },
   "badges": {
     "first_step": {
       "title": "First step",

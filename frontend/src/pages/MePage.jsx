@@ -91,6 +91,20 @@ function MePage() {
       {/* Passeport Athar : checklist visuelle de tous les sites */}
       <PassportSection allSites={allSites} visitedIds={visitedIds} />
 
+      {/* CTA vers le voyage personnel privé, construit depuis les favoris */}
+      <Link
+        to="/mon-voyage"
+        className="mb-10 flex items-center justify-between gap-4 bg-teal-950 text-white rounded-2xl p-5 hover:bg-teal-900 transition"
+      >
+        <div>
+          <p className="font-display font-700 text-lg flex items-center gap-2">
+            🧭 {t('my_trip.cta_title')}
+          </p>
+          <p className="text-sm text-sand-100/80 mt-1">{t('my_trip.cta_subtitle')}</p>
+        </div>
+        <span className="text-2xl shrink-0">→</span>
+      </Link>
+
       {/* Section favoris */}
       <section className="mb-10">
         <h2 className="font-display font-700 text-2xl text-teal-950 mb-4 flex items-center gap-2">

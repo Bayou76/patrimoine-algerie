@@ -51,4 +51,10 @@ class User extends Authenticatable
     {
         return $this->hasMany(SiteUserInteraction::class);
     }
+
+    /** Les étapes de « Mon voyage », ordonnées. */
+    public function tripSites()
+    {
+        return $this->hasMany(UserTripSite::class)->orderBy('position');
+    }
 }

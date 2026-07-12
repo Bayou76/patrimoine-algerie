@@ -17,6 +17,7 @@ use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\InteractionController;
 use App\Http\Controllers\Api\ItineraryController;
 use App\Http\Controllers\Api\MeController;
+use App\Http\Controllers\Api\MyTripController;
 use App\Http\Controllers\Api\ReviewController;
 use App\Http\Controllers\Api\SiteController;
 use App\Http\Controllers\Api\TimelineController;
@@ -47,6 +48,14 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('/itineraries', [ItineraryController::class, 'store']);
 
     Route::get('/me', [MeController::class, 'show']);
+
+    // « Mon voyage » : itinéraire personnel privé, construit depuis les favoris.
+    Route::get('/my-trip', [MyTripController::class, 'index']);
+    Route::post('/my-trip', [MyTripController::class, 'addSite']);
+    Route::put('/my-trip/reorder', [MyTripController::class, 'reorder']);
+    Route::put('/my-trip/{siteId}', [MyTripController::class, 'updateNote']);
+    Route::delete('/my-trip/{siteId}', [MyTripController::class, 'removeSite']);
+
     // Route utilitaire pour récupérer l'utilisateur connecté (utile côté React).
     Route::get('/user', function (Request $request) {
         return $request->user();

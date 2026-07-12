@@ -92,6 +92,13 @@ export const api = {
   // Connecté — proposer un itinéraire (publié tout de suite, tagué communauté)
   proposeItinerary: (payload) => request('/itineraries', { method: 'POST', body: payload }),
 
+  // Connecté — « Mon voyage » (itinéraire personnel privé)
+  getMyTrip: (lang) => request(`/my-trip?lang=${lang}`),
+  addToMyTrip: (siteId) => request('/my-trip', { method: 'POST', body: { site_id: siteId } }),
+  reorderMyTrip: (siteIds) => request('/my-trip/reorder', { method: 'PUT', body: { site_ids: siteIds } }),
+  updateMyTripNote: (siteId, note) => request(`/my-trip/${siteId}`, { method: 'PUT', body: { note } }),
+  removeFromMyTrip: (siteId) => request(`/my-trip/${siteId}`, { method: 'DELETE' }),
+
   // Admin — CRUD complet + stats du dashboard
   adminGetStats: () => request('/admin/stats'),
   adminGetSite: (siteId) => request(`/admin/sites/${siteId}`),

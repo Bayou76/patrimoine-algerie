@@ -221,6 +221,20 @@
     "passport": "Passeport Athar",
     "passport_progress": "{{visited}} / {{total}} sites découverts"
   },
+  "my_trip": {
+    "cta_title": "Mon voyage",
+    "cta_subtitle": "Construis ton itinéraire personnel à partir de tes favoris.",
+    "title": "Mon voyage",
+    "subtitle": "Ton itinéraire personnel et privé, visible par toi seul(e).",
+    "add_from_favorites": "Ajouter un favori à mon voyage",
+    "no_favorites_yet": "Ajoute d'abord des sites à tes favoris pour pouvoir les inclure ici.",
+    "all_favorites_added": "Tous tes favoris sont déjà dans ton voyage.",
+    "choose_site": "Choisir un site…",
+    "add": "Ajouter",
+    "remove": "Retirer",
+    "empty": "Ton voyage est vide pour l'instant. Ajoute des sites depuis tes favoris ci-dessus.",
+    "note_placeholder": "Ajouter une note (horaires, transport, idées…)"
+  },
   "badges": {
     "first_step": {
       "title": "Premier pas",

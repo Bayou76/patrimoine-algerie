@@ -33,6 +33,7 @@ import AdminItinerariesPage from './pages/AdminItinerariesPage'
 import AdminItineraryNewPage from './pages/AdminItineraryNewPage'
 import AdminItineraryEditPage from './pages/AdminItineraryEditPage'
 import ProposeItineraryPage from './pages/ProposeItineraryPage'
+import MyTripPage from './pages/MyTripPage'
 import LanguageSwitcher from './components/LanguageSwitcher'
 import ThemeToggle from './components/ThemeToggle'
 import Footer from './components/Footer'
@@ -215,6 +216,7 @@ function App() {
           <Route path="/chronologie" element={<GlobalTimelinePage />} />
           <Route path="/itineraires" element={<ItinerariesPage />} />
           <Route path="/itineraires/proposer" element={<ProposeItineraryPage />} />
+          <Route path="/mon-voyage" element={<MyTripPage />} />
           <Route path="/itineraires/:slug" element={<ItineraryDetailPage />} />
           <Route path="/infos-pratiques" element={<PracticalInfoPage />} />
           <Route path="/login" element={<LoginPage />} />
