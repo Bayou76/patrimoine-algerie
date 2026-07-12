@@ -17,13 +17,15 @@ return [
 
     'allowed_origins' => array_filter([
         env('FRONTEND_URL'),
-        env('APP_ENV') !== 'production' ? 'http://localhost:5174' : null,
     ]),
 
-    // Autorise aussi tous les déploiements de preview Vercel (*.vercel.app)
-    'allowed_origins_patterns' => [
+    // Autorise tous les déploiements de preview Vercel (*.vercel.app), et en
+    // local n'importe quel port localhost (pratique quand le port 5174 est
+    // déjà pris par un autre process : le serveur de test peut en choisir un autre).
+    'allowed_origins_patterns' => array_filter([
         '#^https://.*\.vercel\.app$#',
-    ],
+        env('APP_ENV') !== 'production' ? '#^http://localhost:\d+$#' : null,
+    ]),
 
     'allowed_headers' => ['*'],
 
