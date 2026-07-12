@@ -21,4 +21,4 @@ RUN chmod -R 775 storage bootstrap/cache
 
 RUN chmod +x docker-entrypoint.sh
 
-ENTRYPOINT ["docker-entrypoint.sh"]
+ENTRYPOINT ["/var/www/docker-entrypoint.sh"]
