@@ -3,4 +3,4 @@ Allow: /
 Disallow: /admin
 Disallow: /api
 
-Sitemap: http://localhost:8001/sitemap.xml
+Sitemap: https://athar-api-production.up.railway.app/sitemap.xml

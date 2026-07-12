@@ -1,0 +1,35 @@
+# Image de production — utilisée par Railway pour builder et servir l'API.
+# Le Dockerfile (sans suffixe) reste dédié au développement local avec
+# docker-compose ; celui-ci construit une image autonome, code inclus.
+FROM php:8.4-cli
+
+# pdo_mysql : pour parler à la base MySQL. opcache : cache le bytecode PHP,
+# gain de perf notable en production (évite de reparser les fichiers PHP
+# à chaque requête).
+RUN docker-php-ext-install pdo pdo_mysql opcache
+
+RUN apt-get update && apt-get install -y unzip git libzip-dev zip \
+    && docker-php-ext-install zip \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
+WORKDIR /var/www
+
+# On copie d'abord composer.json/lock seuls : Docker met cette couche en cache
+# et ne relance `composer install` que si les dépendances ont changé.
+COPY composer.json composer.lock ./
+RUN composer install --no-dev --no-scripts --no-interaction --prefer-dist --optimize-autoloader
+
+COPY . .
+
+# --no-scripts plus haut évite d'exécuter artisan avant que le code entier
+# soit présent ; on relance le dump d'autoload maintenant que tout est copié.
+RUN composer dump-autoload --optimize --no-dev
+
+RUN chmod -R 775 storage bootstrap/cache
+
+COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
+RUN chmod +x /usr/local/bin/docker-entrypoint.sh
+
+ENTRYPOINT ["docker-entrypoint.sh"]
