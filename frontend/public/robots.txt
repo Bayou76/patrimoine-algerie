@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://patrimoine-algerie.vercel.app/sitemap.xml
