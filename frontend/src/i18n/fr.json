@@ -1,0 +1,278 @@
+{
+  "nav": {
+    "administration": "Administration",
+    "greeting": "Bonjour, {{name}}",
+    "logout": "Se déconnecter",
+    "login": "Connexion",
+    "register": "Inscription",
+    "timeline": "Chronologie",
+    "itineraries": "Itinéraires",
+    "practical_info": "Infos pratiques"
+  },
+  "practical_info": {
+    "title": "Infos pratiques",
+    "subtitle": "Tout ce qu'il faut savoir avant de partir explorer le patrimoine algérien.",
+    "disclaimer": "Informations à jour au mieux de nos connaissances. Vérifiez toujours auprès des sources officielles (ambassade, compagnie aérienne) avant de partir.",
+    "sections": {
+      "visa": {
+        "title": "Visa et entrée sur le territoire",
+        "body": "La plupart des ressortissants européens et nord-américains doivent obtenir un visa avant l'arrivée. La demande se fait auprès du consulat d'Algérie du pays de résidence.\n\nDepuis 2023, un e-visa touristique est disponible pour certains pays via le site officiel du ministère des Affaires étrangères. Les Algériens de la diaspora et leurs enfants (moins de 18 ans) sont exemptés."
+      },
+      "best_season": {
+        "title": "Meilleure saison selon la région",
+        "body": "🏖️ Côte méditerranéenne (Alger, Oran, Annaba, Tipaza) : mai à octobre. Étés chauds mais supportables.\n\n🏔️ Villes intérieures (Constantine, Tlemcen, Sétif) : avril à juin, puis septembre-octobre.\n\n🏜️ Grand Sud (Hoggar, Tassili, Timimoun) : d'octobre à avril impérativement. L'été y est meurtrier (45-50°C)."
+      },
+      "transport": {
+        "title": "Se déplacer",
+        "body": "Air Algérie relie toutes les grandes villes (vols intérieurs abordables). Le train est fiable entre Alger, Oran et Constantine.\n\nPour le Grand Sud, la voiture avec chauffeur ou l'agence locale sont fortement recommandées. Louer une voiture 4x4 est possible mais l'expérience d'un guide local vaut de l'or.\n\nTaxis et VTC (Yassir) présents dans les grandes villes."
+      },
+      "safety": {
+        "title": "Sécurité",
+        "body": "Le nord de l'Algérie (côte, grandes villes, sites classés) est globalement sûr pour les touristes. Les zones frontalières avec le Mali, le Niger et la Libye restent déconseillées.\n\nÉvitez d'exhiber trop d'argent ou de matériel photo dans les zones populaires. Suivez les recommandations du ministère des Affaires étrangères de votre pays."
+      },
+      "money": {
+        "title": "Monnaie et paiements",
+        "body": "La monnaie est le dinar algérien (DZD). Il ne s'exporte pas — changez sur place.\n\nLe change officiel se fait dans les banques et bureaux de change agréés, mais le taux du marché parallèle est souvent bien plus avantageux (renseignez-vous localement).\n\nLes cartes bancaires étrangères sont peu acceptées hors des grands hôtels. Prévoyez du liquide."
+      },
+      "ramadan": {
+        "title": "Voyager pendant le Ramadan",
+        "body": "Pendant le mois sacré, la vie diurne ralentit : restaurants fermés en journée, sites parfois horaires réduits. En revanche, les nuits sont animées et festives.\n\nPar respect, évitez de manger, boire ou fumer en public en journée. La rupture du jeûne (Iftar) au coucher du soleil est un moment magique à partager."
+      },
+      "connectivity": {
+        "title": "Internet et téléphone",
+        "body": "3 opérateurs mobiles : Djezzy, Mobilis, Ooredoo. Cartes SIM prépayées disponibles à l'aéroport ou en boutique (passeport requis).\n\nLa 4G couvre les zones urbaines et les principaux axes. Dans le Grand Sud, la couverture est très parcellaire — prévoyez le hors-ligne."
+      },
+      "etiquette": {
+        "title": "Us et coutumes",
+        "body": "L'Algérie est un pays chaleureux et hospitalier. Le thé à la menthe est un rituel d'accueil, refuser peut vexer.\n\nTenue correcte demandée dans les mosquées et lieux religieux (épaules et jambes couvertes). Pour photographier des personnes, toujours demander l'autorisation.\n\nLe français est très parlé, l'arabe (fusha et darija) est la langue nationale, le tamazight aussi langue officielle."
+      }
+    }
+  },
+  "itineraries_page": {
+    "title": "Itinéraires thématiques",
+    "subtitle": "Des parcours prêts à suivre pour découvrir l'Algérie autrement — sur les traces des Romains, dans le Grand Sud, à Alger…",
+    "back": "Retour aux itinéraires",
+    "stages": "Les étapes",
+    "stops": "étapes",
+    "themes": {
+      "romain": "Romain",
+      "sud": "Grand Sud",
+      "villes": "Villes",
+      "spirituel": "Spirituel",
+      "naturel": "Nature"
+    },
+    "difficulties": {
+      "facile": "Facile",
+      "moyen": "Moyen",
+      "soutenu": "Soutenu"
+    }
+  },
+  "timeline_page": {
+    "title": "L'histoire de l'Algérie en dates",
+    "subtitle": "Des premières gravures rupestres aux monuments contemporains — une chronologie complète du patrimoine algérien.",
+    "eras": {
+      "geological": "Formation géologique",
+      "prehistory": "Préhistoire",
+      "antiquity_bc": "Antiquité (av. J.-C.)",
+      "antiquity_ad": "Antiquité (apr. J.-C.)",
+      "medieval": "Moyen Âge",
+      "early_modern": "Époque moderne",
+      "colonial": "Période coloniale",
+      "contemporary": "Algérie contemporaine"
+    }
+  },
+  "home": {
+    "title": "Guide du patrimoine algérien",
+    "tagline": "Sites romains, casbahs, oasis et lieux sacrés — à découvrir dans leur histoire, en plusieurs langues.",
+    "explore_by_category": "Explorer par catégorie",
+    "explore_on_map": "Explorer sur la carte",
+    "sites_to_discover": "Sites à découvrir",
+    "filter_by_wilaya": "Filtrer par wilaya",
+    "all_wilayas": "Toutes les wilayas",
+    "search_placeholder": "Rechercher un site, une wilaya…",
+    "reset_filters": "Réinitialiser les filtres"
+  },
+  "categories": {
+    "all": "Tout",
+    "romain": "Romain",
+    "naturel": "Naturel",
+    "religieux": "Religieux",
+    "casbah": "Casbah",
+    "islamique": "Islamique",
+    "colonial": "Colonial",
+    "moderne": "Moderne",
+    "prehistorique": "Préhistorique"
+  },
+  "map": {
+    "view_site": "Voir le site →"
+  },
+  "list": {
+    "loading": "Chargement...",
+    "error": "Impossible de charger les sites.",
+    "empty": "Aucun site trouvé."
+  },
+  "detail": {
+    "back_to_list": "← Retour à la liste",
+    "history": "Histoire",
+    "how_to_visit": "Comment visiter",
+    "gallery": "Galerie",
+    "reviews_count": "Avis ({{count}})",
+    "opening_hours": "Horaires",
+    "entry_fee": "Tarif",
+    "no_reviews": "Aucun avis pour le moment.",
+    "verified_visit": "Visite vérifiée",
+    "connect_to_review_prefix": "",
+    "connect_to_review_link": "Connectez-vous",
+    "connect_to_review_suffix": " pour laisser un avis.",
+    "not_found": "Ce site n'existe pas.",
+    "delete_review": "Supprimer",
+    "confirm_delete_review": "Supprimer cet avis ?",
+    "similar_sites": "À découvrir aussi",
+    "get_directions": "Y aller",
+    "open_in_maps_hint": "Ouvrir dans Google Maps",
+    "view_360": "Vue 360°",
+    "open_streetview_hint": "Ouvrir Google Street View sur ce site"
+  },
+  "share": {
+    "button": "Partager",
+    "copied": "Lien copié !",
+    "hint": "Partager ou copier le lien",
+    "copy_manual": "Copiez ce lien :"
+  },
+  "pwa": {
+    "install_title": "Installer Athar",
+    "install_body": "Ajoute Athar à ton écran d'accueil pour un accès rapide et un mode hors-ligne.",
+    "install_button": "Installer",
+    "install_later": "Plus tard",
+    "install_ios_body": "Sur iPhone, il faut passer par le menu Partager de Safari.",
+    "install_ios_step1": "Appuie sur l'icône Partager en bas",
+    "install_ios_step2": "Fais défiler et choisis",
+    "install_ios_action": "Sur l'écran d'accueil",
+    "install_ios_step3": "Confirme avec « Ajouter »",
+    "install_macos_body": "Sur Mac, Safari permet d'ajouter Athar au Dock.",
+    "install_macos_step1": "Dans la barre de menu, ouvre",
+    "install_macos_action": "Fichier → Ajouter au Dock",
+    "install_macos_step2": "Athar s'ouvrira comme une vraie application."
+  },
+  "actions": {
+    "add_favorite": "Ajouter aux favoris",
+    "in_favorites": "Dans mes favoris",
+    "add_visited": "J'y suis allé(e)",
+    "visited": "Site visité",
+    "connect_prefix": "",
+    "connect_link": "Connectez-vous",
+    "connect_suffix": " pour ajouter ce site à vos favoris ou marquer que vous l'avez visité.",
+    "toast_favorite_added": "Ajouté aux favoris",
+    "toast_favorite_removed": "Retiré des favoris",
+    "toast_visited_added": "Marqué comme visité",
+    "toast_visited_removed": "Marqué comme non visité"
+  },
+  "review_form": {
+    "rating": "Note",
+    "comment_placeholder": "Votre avis (optionnel)",
+    "submit": "Publier l'avis",
+    "submitting": "Envoi...",
+    "error": "Impossible d'envoyer l'avis."
+  },
+  "auth": {
+    "login_title": "Connexion",
+    "register_title": "Inscription",
+    "email": "Email",
+    "password": "Mot de passe",
+    "password_confirmation": "Confirmer le mot de passe",
+    "name": "Nom",
+    "login_button": "Se connecter",
+    "register_button": "S'inscrire",
+    "wrong_credentials": "Identifiants incorrects.",
+    "register_failed": "Inscription impossible."
+  },
+  "me": {
+    "title": "Mon compte",
+    "greeting": "Bonjour, {{name}}.",
+    "admin_badge": "Administrateur",
+    "favorites": "Mes favoris",
+    "visited": "Sites visités",
+    "my_reviews": "Mes avis",
+    "no_favorites": "Aucun favori pour le moment. Explorez les sites et ajoutez ceux qui vous plaisent avec le bouton ❤️.",
+    "no_visited": "Aucun site marqué comme visité. Vos avis sur ces sites seront étiquetés « Visite vérifiée ».",
+    "no_reviews": "Vous n'avez pas encore publié d'avis.",
+    "loading": "Chargement...",
+    "badges": "Mes badges"
+  },
+  "badges": {
+    "first_step": {
+      "title": "Premier pas",
+      "description": "Visiter votre premier site"
+    },
+    "explorer": {
+      "title": "Explorateur",
+      "description": "Visiter 5 sites différents"
+    },
+    "adventurer": {
+      "title": "Aventurier",
+      "description": "Visiter 10 sites différents"
+    },
+    "globetrotter": {
+      "title": "Globe-trotter",
+      "description": "Visiter 20 sites différents"
+    },
+    "nomad": {
+      "title": "Nomade",
+      "description": "Visiter des sites dans 5 wilayas"
+    },
+    "polyglot": {
+      "title": "Éclectique",
+      "description": "Visiter 4 catégories différentes"
+    },
+    "critic": {
+      "title": "Critique",
+      "description": "Publier 5 avis"
+    },
+    "roman_lover": {
+      "title": "Passionné d'Antiquité",
+      "description": "Visiter 3 sites romains"
+    },
+    "nature_lover": {
+      "title": "Amoureux de la nature",
+      "description": "Visiter 3 sites naturels"
+    }
+  },
+  "admin": {
+    "title": "Administration",
+    "total_sites": "{{count}} sites au total",
+    "new_site": "+ Nouveau site",
+    "loading_sites": "Chargement des sites...",
+    "view": "Voir",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "confirm_delete": "Supprimer définitivement « {{name}} » ? Cette action est irréversible.",
+    "delete_failed": "Suppression impossible.",
+    "access_denied": "Accès réservé aux administrateurs.",
+    "back_to_admin": "← Retour à l'administration",
+    "new_site_title": "Nouveau site",
+    "edit_site_title": "Modifier « {{name}} »",
+    "creating": "Créer le site",
+    "saving": "Enregistrer les modifications",
+    "total_favorites": "Favoris",
+    "total_visited": "Visites",
+    "total_reviews": "Avis",
+    "sort_by": "Trier par :",
+    "sort_name": "Nom (A-Z)",
+    "sort_favorites": "Favoris",
+    "sort_visited": "Visites",
+    "sort_reviews": "Avis",
+    "sort_rating": "Note moyenne"
+  },
+  "footer": {
+    "tagline": "Un guide collaboratif du patrimoine culturel, historique et naturel de l'Algérie, en plusieurs langues.",
+    "explore": "Explorer",
+    "all_sites": "Tous les sites",
+    "roman_sites": "Sites romains",
+    "natural_sites": "Sites naturels",
+    "sacred_places": "Lieux sacrés",
+    "about": "À propos",
+    "about_text": "Photos issues de Wikimedia Commons, sous licences libres. Contenu à vocation informative — vérifiez les informations pratiques (horaires, tarifs) avant votre visite.",
+    "credit": "Guide du patrimoine algérien",
+    "designed_by": "Conçu par {{name}} avec ❤️ pour le patrimoine"
+  }
+}

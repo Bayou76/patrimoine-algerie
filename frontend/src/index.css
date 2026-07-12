@@ -1,0 +1,196 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Cairo", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Cairo", ui-sans-serif, system-ui, sans-serif;
+
+  --color-sand-50: #fbf7f0;
+  --color-sand-100: #f5ecdc;
+  --color-sand-200: #ead9bb;
+
+  --color-terracotta-50: #fdf1ec;
+  --color-terracotta-400: #d97a54;
+  --color-terracotta-500: #c1502e;
+  --color-terracotta-600: #a63f22;
+  --color-terracotta-700: #86331c;
+
+  --color-teal-950: #0f2a30;
+  --color-teal-900: #163a42;
+  --color-teal-800: #1f4d57;
+
+  --color-gold-400: #d4a537;
+  --color-gold-500: #b8891f;
+}
+
+/* Thème adaptable : light par défaut, dark via [data-theme="dark"] */
+:root {
+  --app-bg: var(--color-sand-50);
+  --app-surface: #ffffff;
+  --app-border: var(--color-sand-200);
+  --app-text: var(--color-teal-950);
+  --app-text-muted: rgba(22, 58, 66, 0.7);
+  --app-text-faint: rgba(22, 58, 66, 0.5);
+  --app-nav-bg: var(--color-teal-950);
+  --app-footer-bg: var(--color-teal-950);
+  --app-input-bg: #ffffff;
+}
+
+[data-theme="dark"] {
+  --app-bg: #0a1518;
+  --app-surface: #14282e;
+  --app-border: #1f3d44;
+  --app-text: #f5ecdc;
+  --app-text-muted: rgba(245, 236, 220, 0.72);
+  --app-text-faint: rgba(245, 236, 220, 0.45);
+  --app-nav-bg: #050e11;
+  --app-footer-bg: #050e11;
+  --app-input-bg: #14282e;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--app-bg);
+  color: var(--app-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* --- Animations custom --- */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes heartPop {
+  0%   { transform: scale(1); }
+  30%  { transform: scale(1.35); }
+  60%  { transform: scale(0.9); }
+  100% { transform: scale(1); }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -20px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes slideOutUp {
+  from {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -20px);
+  }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes heroZoom {
+  from { transform: scale(1); }
+  to   { transform: scale(1.06); }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease both;
+}
+
+.animate-heart-pop {
+  animation: heartPop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.animate-toast-in {
+  animation: slideInDown 0.3s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes drawerDown {
+  from { opacity: 0; transform: translateY(-12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-slide-down {
+  animation: drawerDown 0.25s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-toast-out {
+  animation: slideOutUp 0.3s ease both;
+}
+
+.animate-hero-zoom {
+  animation: heroZoom 15s ease-in-out infinite alternate;
+}
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--color-sand-100) 25%,
+    var(--color-sand-200) 50%,
+    var(--color-sand-100) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.6s infinite linear;
+}
+
+.spinner {
+  border: 2px solid transparent;
+  border-top-color: currentColor;
+  border-right-color: currentColor;
+  border-radius: 9999px;
+  animation: spin 0.7s linear infinite;
+}
+
+/* Classes utilitaires liées au thème */
+.bg-app { background-color: var(--app-bg); }
+.bg-surface { background-color: var(--app-surface); }
+.border-app { border-color: var(--app-border); }
+.text-app { color: var(--app-text); }
+.text-muted { color: var(--app-text-muted); }
+.text-faint { color: var(--app-text-faint); }
+.bg-nav { background-color: var(--app-nav-bg); }
+.bg-footer { background-color: var(--app-footer-bg); }
+.bg-input { background-color: var(--app-input-bg); }
+
+/* Adapter tailwind classes qu'on utilise beaucoup pour qu'elles suivent le thème */
+[data-theme="dark"] .bg-white { background-color: var(--app-surface) !important; }
+[data-theme="dark"] .border-sand-200 { border-color: var(--app-border) !important; }
+[data-theme="dark"] .text-teal-950 { color: var(--app-text) !important; }
+[data-theme="dark"] .text-teal-900 { color: var(--app-text) !important; }
+[data-theme="dark"] .text-teal-900\/90 { color: var(--app-text-muted) !important; }
+[data-theme="dark"] .text-teal-900\/80 { color: var(--app-text-muted) !important; }
+[data-theme="dark"] .text-teal-900\/70 { color: var(--app-text-muted) !important; }
+[data-theme="dark"] .text-teal-900\/60 { color: var(--app-text-faint) !important; }
+[data-theme="dark"] .text-teal-900\/50 { color: var(--app-text-faint) !important; }
+[data-theme="dark"] .bg-sand-200 { background-color: var(--app-border) !important; }
+[data-theme="dark"] .bg-sand-100 { background-color: var(--app-border) !important; }
+[data-theme="dark"] .bg-sand-50 { background-color: var(--app-bg) !important; }
+
+/* Cas particuliers utilisés pour la page détail */
+[data-theme="dark"] .bg-terracotta-50 { background-color: rgba(217, 122, 84, 0.12) !important; }

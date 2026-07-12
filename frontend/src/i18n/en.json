@@ -1,0 +1,278 @@
+{
+  "nav": {
+    "administration": "Administration",
+    "greeting": "Hello, {{name}}",
+    "logout": "Sign out",
+    "login": "Sign in",
+    "register": "Sign up",
+    "timeline": "Timeline",
+    "itineraries": "Itineraries",
+    "practical_info": "Travel info"
+  },
+  "practical_info": {
+    "title": "Practical information",
+    "subtitle": "Everything you need to know before exploring Algeria's heritage.",
+    "disclaimer": "Information accurate to the best of our knowledge. Always double-check with official sources (embassy, airline) before travelling.",
+    "sections": {
+      "visa": {
+        "title": "Visa and entry",
+        "body": "Most European and North American citizens need a visa before arrival, obtained through the Algerian consulate in their country of residence.\n\nSince 2023, an e-visa for tourism is available to selected countries via the official Foreign Ministry portal. Algerian diaspora members and their children (under 18) are exempt."
+      },
+      "best_season": {
+        "title": "Best season by region",
+        "body": "🏖️ Mediterranean coast (Algiers, Oran, Annaba, Tipaza): May to October. Hot but bearable summers.\n\n🏔️ Inland cities (Constantine, Tlemcen, Sétif): April–June, then September–October.\n\n🏜️ Deep South (Hoggar, Tassili, Timimoun): October to April only. Summer temperatures reach 45–50°C."
+      },
+      "transport": {
+        "title": "Getting around",
+        "body": "Air Algérie connects all major cities (affordable domestic flights). The train is reliable between Algiers, Oran and Constantine.\n\nFor the Deep South, a car with driver or a local agency is strongly recommended. Renting a 4x4 is possible but a local guide adds a lot of value.\n\nTaxis and ride-hailing (Yassir) are widely available in cities."
+      },
+      "safety": {
+        "title": "Safety",
+        "body": "Northern Algeria (coast, major cities, listed sites) is generally safe for tourists. Border areas with Mali, Niger and Libya remain not recommended.\n\nAvoid flashing cash or camera gear in busy areas. Follow the travel advice from your own foreign ministry."
+      },
+      "money": {
+        "title": "Currency and payments",
+        "body": "The currency is the Algerian dinar (DZD). It cannot be exported — exchange on arrival.\n\nOfficial exchange happens in banks and licensed bureaux, but the parallel market rate is often significantly better (ask locally).\n\nForeign bank cards are rarely accepted outside major hotels. Cash is king."
+      },
+      "ramadan": {
+        "title": "Travelling during Ramadan",
+        "body": "During the holy month, daytime life slows down: restaurants closed by day, some sites with reduced hours. Nights, however, are lively and festive.\n\nOut of respect, avoid eating, drinking or smoking in public during the day. Breaking the fast (Iftar) at sunset is a magical moment to share."
+      },
+      "connectivity": {
+        "title": "Internet and phone",
+        "body": "3 mobile operators: Djezzy, Mobilis, Ooredoo. Prepaid SIM cards available at the airport or in shops (passport required).\n\n4G covers urban areas and main routes. Coverage in the Deep South is patchy — plan for offline."
+      },
+      "etiquette": {
+        "title": "Customs and etiquette",
+        "body": "Algerians are warm and hospitable. Mint tea is a welcome ritual — refusing may offend.\n\nModest dress is required in mosques and religious sites (shoulders and legs covered). Always ask before photographing people.\n\nFrench is widely spoken, Arabic (fusha and darija) is the national language, Tamazight is also an official language."
+      }
+    }
+  },
+  "itineraries_page": {
+    "title": "Thematic itineraries",
+    "subtitle": "Ready-made journeys to discover Algeria differently — on the trail of the Romans, in the deep South, in Algiers…",
+    "back": "Back to itineraries",
+    "stages": "Stages",
+    "stops": "stops",
+    "themes": {
+      "romain": "Roman",
+      "sud": "Deep south",
+      "villes": "Cities",
+      "spirituel": "Spiritual",
+      "naturel": "Nature"
+    },
+    "difficulties": {
+      "facile": "Easy",
+      "moyen": "Moderate",
+      "soutenu": "Challenging"
+    }
+  },
+  "timeline_page": {
+    "title": "The history of Algeria in dates",
+    "subtitle": "From the first rock engravings to contemporary monuments — a complete timeline of Algerian heritage.",
+    "eras": {
+      "geological": "Geological formation",
+      "prehistory": "Prehistory",
+      "antiquity_bc": "Antiquity (BC)",
+      "antiquity_ad": "Antiquity (AD)",
+      "medieval": "Middle Ages",
+      "early_modern": "Early modern era",
+      "colonial": "Colonial period",
+      "contemporary": "Contemporary Algeria"
+    }
+  },
+  "home": {
+    "title": "Algerian Heritage Guide",
+    "tagline": "Roman sites, casbahs, oases and sacred places — discover their history in several languages.",
+    "explore_by_category": "Browse by category",
+    "explore_on_map": "Explore on the map",
+    "sites_to_discover": "Sites to discover",
+    "filter_by_wilaya": "Filter by wilaya",
+    "all_wilayas": "All wilayas",
+    "search_placeholder": "Search a site, a wilaya…",
+    "reset_filters": "Reset filters"
+  },
+  "categories": {
+    "all": "All",
+    "romain": "Roman",
+    "naturel": "Natural",
+    "religieux": "Religious",
+    "casbah": "Casbah",
+    "islamique": "Islamic",
+    "colonial": "Colonial",
+    "moderne": "Modern",
+    "prehistorique": "Prehistoric"
+  },
+  "map": {
+    "view_site": "View site →"
+  },
+  "list": {
+    "loading": "Loading...",
+    "error": "Unable to load sites.",
+    "empty": "No site found."
+  },
+  "detail": {
+    "back_to_list": "← Back to the list",
+    "history": "History",
+    "how_to_visit": "How to visit",
+    "gallery": "Gallery",
+    "reviews_count": "Reviews ({{count}})",
+    "opening_hours": "Opening hours",
+    "entry_fee": "Entry fee",
+    "no_reviews": "No review yet.",
+    "verified_visit": "Verified visit",
+    "connect_to_review_prefix": "",
+    "connect_to_review_link": "Sign in",
+    "connect_to_review_suffix": " to leave a review.",
+    "not_found": "This site does not exist.",
+    "delete_review": "Delete",
+    "confirm_delete_review": "Delete this review?",
+    "similar_sites": "You may also like",
+    "get_directions": "Get directions",
+    "open_in_maps_hint": "Open in Google Maps",
+    "view_360": "360° view",
+    "open_streetview_hint": "Open Google Street View at this site"
+  },
+  "share": {
+    "button": "Share",
+    "copied": "Link copied!",
+    "hint": "Share or copy the link",
+    "copy_manual": "Copy this link:"
+  },
+  "pwa": {
+    "install_title": "Install Athar",
+    "install_body": "Add Athar to your home screen for quick access and offline mode.",
+    "install_button": "Install",
+    "install_later": "Later",
+    "install_ios_body": "On iPhone, use Safari's Share menu to install.",
+    "install_ios_step1": "Tap the Share icon at the bottom",
+    "install_ios_step2": "Scroll and choose",
+    "install_ios_action": "Add to Home Screen",
+    "install_ios_step3": "Confirm with \"Add\"",
+    "install_macos_body": "On Mac, Safari lets you add Athar to the Dock.",
+    "install_macos_step1": "In the menu bar, open",
+    "install_macos_action": "File → Add to Dock",
+    "install_macos_step2": "Athar will open like a real app."
+  },
+  "actions": {
+    "add_favorite": "Add to favourites",
+    "in_favorites": "In my favourites",
+    "add_visited": "I've been there",
+    "visited": "Visited",
+    "connect_prefix": "",
+    "connect_link": "Sign in",
+    "connect_suffix": " to add this site to your favourites or mark it as visited.",
+    "toast_favorite_added": "Added to favourites",
+    "toast_favorite_removed": "Removed from favourites",
+    "toast_visited_added": "Marked as visited",
+    "toast_visited_removed": "Unmarked as visited"
+  },
+  "review_form": {
+    "rating": "Rating",
+    "comment_placeholder": "Your review (optional)",
+    "submit": "Post review",
+    "submitting": "Sending...",
+    "error": "Unable to send the review."
+  },
+  "auth": {
+    "login_title": "Sign in",
+    "register_title": "Sign up",
+    "email": "Email",
+    "password": "Password",
+    "password_confirmation": "Confirm password",
+    "name": "Name",
+    "login_button": "Sign in",
+    "register_button": "Sign up",
+    "wrong_credentials": "Wrong credentials.",
+    "register_failed": "Sign-up failed."
+  },
+  "me": {
+    "title": "My account",
+    "greeting": "Hello, {{name}}.",
+    "admin_badge": "Administrator",
+    "favorites": "My favourites",
+    "visited": "Visited sites",
+    "my_reviews": "My reviews",
+    "no_favorites": "No favourite yet. Browse the sites and add the ones you like with the ❤️ button.",
+    "no_visited": "No site marked as visited. Your reviews on these sites will be tagged as 'Verified visit'.",
+    "no_reviews": "You haven't posted any review yet.",
+    "loading": "Loading...",
+    "badges": "My badges"
+  },
+  "badges": {
+    "first_step": {
+      "title": "First step",
+      "description": "Visit your first site"
+    },
+    "explorer": {
+      "title": "Explorer",
+      "description": "Visit 5 different sites"
+    },
+    "adventurer": {
+      "title": "Adventurer",
+      "description": "Visit 10 different sites"
+    },
+    "globetrotter": {
+      "title": "Globetrotter",
+      "description": "Visit 20 different sites"
+    },
+    "nomad": {
+      "title": "Nomad",
+      "description": "Visit sites in 5 wilayas"
+    },
+    "polyglot": {
+      "title": "Eclectic",
+      "description": "Visit 4 different categories"
+    },
+    "critic": {
+      "title": "Critic",
+      "description": "Post 5 reviews"
+    },
+    "roman_lover": {
+      "title": "Antiquity lover",
+      "description": "Visit 3 Roman sites"
+    },
+    "nature_lover": {
+      "title": "Nature lover",
+      "description": "Visit 3 natural sites"
+    }
+  },
+  "admin": {
+    "title": "Administration",
+    "total_sites": "{{count}} sites total",
+    "new_site": "+ New site",
+    "loading_sites": "Loading sites...",
+    "view": "View",
+    "edit": "Edit",
+    "delete": "Delete",
+    "confirm_delete": "Permanently delete '{{name}}'? This action cannot be undone.",
+    "delete_failed": "Deletion failed.",
+    "access_denied": "Access restricted to administrators.",
+    "back_to_admin": "← Back to administration",
+    "new_site_title": "New site",
+    "edit_site_title": "Edit '{{name}}'",
+    "creating": "Create site",
+    "saving": "Save changes",
+    "total_favorites": "Favourites",
+    "total_visited": "Visits",
+    "total_reviews": "Reviews",
+    "sort_by": "Sort by:",
+    "sort_name": "Name (A-Z)",
+    "sort_favorites": "Favourites",
+    "sort_visited": "Visits",
+    "sort_reviews": "Reviews",
+    "sort_rating": "Average rating"
+  },
+  "footer": {
+    "tagline": "A collaborative guide to Algeria's cultural, historical and natural heritage, in several languages.",
+    "explore": "Explore",
+    "all_sites": "All sites",
+    "roman_sites": "Roman sites",
+    "natural_sites": "Natural sites",
+    "sacred_places": "Sacred places",
+    "about": "About",
+    "about_text": "Photos sourced from Wikimedia Commons, under open licenses. Content is informational — check practical information (opening hours, prices) before your visit.",
+    "credit": "Algerian Heritage Guide",
+    "designed_by": "Designed by {{name}} with ❤️ for heritage"
+  }
+}
