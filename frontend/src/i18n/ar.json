@@ -144,6 +144,7 @@
     "get_directions": "الذهاب إلى هنا",
     "audio_listen": "استمع إلى القصة",
     "audio_stop": "إيقاف مؤقت",
+    "key_facts": "أهم المعلومات",
     "open_in_maps_hint": "افتح في خرائط جوجل",
     "view_360": "عرض 360°",
     "open_streetview_hint": "افتح Google Street View لهذا الموقع"
@@ -212,7 +213,9 @@
     "no_visited": "لم تقم بتحديد أي موقع كمزار. ستُوسم تقييماتك على هذه المواقع بـ«زيارة موثقة».",
     "no_reviews": "لم تنشر أي تقييم بعد.",
     "loading": "جار التحميل...",
-    "badges": "أوسمتي"
+    "badges": "أوسمتي",
+    "passport": "جواز سفر أثار",
+    "passport_progress": "{{visited}} / {{total}} مواقع تم اكتشافها"
   },
   "badges": {
     "first_step": {

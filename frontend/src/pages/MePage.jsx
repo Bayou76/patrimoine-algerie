@@ -7,12 +7,14 @@
  * Sécurité : si l'utilisateur n'est pas connecté, redirection vers /login.
  */
 
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Link, Navigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { api } from '../services/api'
 import { useAuth } from '../context/AuthContext'
+import { useLanguage } from '../context/LanguageContext'
 import BadgesGrid from '../components/BadgesGrid'
+import PassportSection from '../components/PassportSection'
 
 /** Petite carte horizontale d'un site (utilisée dans les listes de la page). */
 function SiteCard({ site }) {
@@ -39,9 +41,11 @@ function SiteCard({ site }) {
 
 function MePage() {
   const { user, loading } = useAuth()
+  const { language } = useLanguage()
   const { t } = useTranslation()
   const [data, setData] = useState(null)
   const [dataLoading, setDataLoading] = useState(true)
+  const [allSites, setAllSites] = useState([])
 
   useEffect(() => {
     // Sans user connecté on ne fait pas l'appel (évite un 401 dans les logs).
@@ -50,7 +54,15 @@ function MePage() {
       .getMe()
       .then(setData)
       .finally(() => setDataLoading(false))
-  }, [user])
+    // Catalogue complet pour le Passeport — indépendant du chargement de /me.
+    api.getSites({ lang: language }).then(setAllSites)
+  }, [user, language])
+
+  // Set des ids visités : lookup O(1) au lieu de .find() dans la boucle du passeport.
+  const visitedIds = useMemo(
+    () => new Set((data?.visited ?? []).map((s) => s.id)),
+    [data],
+  )
 
   // Attente de la résolution du token → écran de chargement neutre.
   if (loading) return <p className="p-6 text-teal-900">{t('me.loading')}</p>
@@ -75,6 +87,9 @@ function MePage() {
 
       {/* Section badges : grille des 9 badges avec leur progression */}
       <BadgesGrid badges={data.badges} />
+
+      {/* Passeport Athar : checklist visuelle de tous les sites */}
+      <PassportSection allSites={allSites} visitedIds={visitedIds} />
 
       {/* Section favoris */}
       <section className="mb-10">

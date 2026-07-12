@@ -34,6 +34,7 @@ import DirectionsButton from '../components/DirectionsButton'
 import StreetViewButton from '../components/StreetViewButton'
 import ShareButton from '../components/ShareButton'
 import AudioGuideButton from '../components/AudioGuideButton'
+import KeyFacts from '../components/KeyFacts'
 import { usePageMeta, buildSiteJsonLd } from '../utils/pageMeta'
 
 function SiteDetailPage() {
@@ -149,6 +150,8 @@ function SiteDetailPage() {
             </p>
           </Reveal>
         )}
+
+        <KeyFacts site={site} timeline={timeline} />
 
         {/* Barre d'actions : 5 boutons alignés qui wrappent en flex-wrap */}
         <Reveal delay={80}>

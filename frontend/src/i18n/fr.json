@@ -144,6 +144,7 @@
     "get_directions": "Y aller",
     "audio_listen": "Écouter l'histoire",
     "audio_stop": "Mettre en pause",
+    "key_facts": "À retenir",
     "open_in_maps_hint": "Ouvrir dans Google Maps",
     "view_360": "Vue 360°",
     "open_streetview_hint": "Ouvrir Google Street View sur ce site"
@@ -212,7 +213,9 @@
     "no_visited": "Aucun site marqué comme visité. Vos avis sur ces sites seront étiquetés « Visite vérifiée ».",
     "no_reviews": "Vous n'avez pas encore publié d'avis.",
     "loading": "Chargement...",
-    "badges": "Mes badges"
+    "badges": "Mes badges",
+    "passport": "Passeport Athar",
+    "passport_progress": "{{visited}} / {{total}} sites découverts"
   },
   "badges": {
     "first_step": {

@@ -144,6 +144,7 @@
     "get_directions": "Get directions",
     "audio_listen": "Listen to the story",
     "audio_stop": "Pause",
+    "key_facts": "Key facts",
     "open_in_maps_hint": "Open in Google Maps",
     "view_360": "360° view",
     "open_streetview_hint": "Open Google Street View at this site"
@@ -212,7 +213,9 @@
     "no_visited": "No site marked as visited. Your reviews on these sites will be tagged as 'Verified visit'.",
     "no_reviews": "You haven't posted any review yet.",
     "loading": "Loading...",
-    "badges": "My badges"
+    "badges": "My badges",
+    "passport": "Athar Passport",
+    "passport_progress": "{{visited}} / {{total}} sites discovered"
   },
   "badges": {
     "first_step": {
