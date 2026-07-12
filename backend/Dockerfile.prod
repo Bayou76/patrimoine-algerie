@@ -23,9 +23,9 @@ RUN composer install --no-dev --no-scripts --no-interaction --prefer-dist --opti
 
 COPY . .
 
-# --no-scripts plus haut évite d'exécuter artisan avant que le code entier
-# soit présent ; on relance le dump d'autoload maintenant que tout est copié.
-RUN composer dump-autoload --optimize --no-dev
+# Le manifeste Laravel sera généré au démarrage, une fois les variables Railway
+# disponibles. Pendant le build, aucun script Artisan ne doit être exécuté.
+RUN composer dump-autoload --optimize --no-dev --no-scripts
 
 RUN chmod -R 775 storage bootstrap/cache
 
