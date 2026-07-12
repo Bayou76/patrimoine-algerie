@@ -142,6 +142,8 @@
     "confirm_delete_review": "Delete this review?",
     "similar_sites": "You may also like",
     "get_directions": "Get directions",
+    "audio_listen": "Listen to the story",
+    "audio_stop": "Pause",
     "open_in_maps_hint": "Open in Google Maps",
     "view_360": "360° view",
     "open_streetview_hint": "Open Google Street View at this site"

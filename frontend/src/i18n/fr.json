@@ -142,6 +142,8 @@
     "confirm_delete_review": "Supprimer cet avis ?",
     "similar_sites": "À découvrir aussi",
     "get_directions": "Y aller",
+    "audio_listen": "Écouter l'histoire",
+    "audio_stop": "Mettre en pause",
     "open_in_maps_hint": "Ouvrir dans Google Maps",
     "view_360": "Vue 360°",
     "open_streetview_hint": "Ouvrir Google Street View sur ce site"

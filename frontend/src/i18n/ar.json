@@ -142,6 +142,8 @@
     "confirm_delete_review": "حذف هذا التقييم؟",
     "similar_sites": "لاكتشاف أيضا",
     "get_directions": "الذهاب إلى هنا",
+    "audio_listen": "استمع إلى القصة",
+    "audio_stop": "إيقاف مؤقت",
     "open_in_maps_hint": "افتح في خرائط جوجل",
     "view_360": "عرض 360°",
     "open_streetview_hint": "افتح Google Street View لهذا الموقع"

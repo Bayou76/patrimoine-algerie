@@ -33,6 +33,7 @@ import SimilarSites from '../components/SimilarSites'
 import DirectionsButton from '../components/DirectionsButton'
 import StreetViewButton from '../components/StreetViewButton'
 import ShareButton from '../components/ShareButton'
+import AudioGuideButton from '../components/AudioGuideButton'
 import { usePageMeta, buildSiteJsonLd } from '../utils/pageMeta'
 
 function SiteDetailPage() {
@@ -165,6 +166,10 @@ function SiteDetailPage() {
             <ShareButton
               title={translation?.name}
               text={translation?.description}
+            />
+            <AudioGuideButton
+              text={[translation?.description, translation?.history].filter(Boolean).join('. ')}
+              language={language}
             />
             <Link
               to="/infos-pratiques"
