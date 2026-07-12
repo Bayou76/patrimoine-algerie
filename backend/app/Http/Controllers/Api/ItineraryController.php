@@ -2,25 +2,52 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Http\Controllers\Api\Concerns\SyncsItinerary;
 use App\Http\Controllers\Controller;
 use App\Models\Itinerary;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 /**
  * Contrôleur ItineraryController — endpoints publics des itinéraires thématiques.
  *
- * GET /api/itineraries         → liste avec version allégée
- * GET /api/itineraries/{slug}  → détail complet avec sites ordonnés
+ * GET  /api/itineraries         → liste avec version allégée
+ * GET  /api/itineraries/{slug}  → détail complet avec sites ordonnés
+ * POST /api/itineraries         → un utilisateur connecté propose un itinéraire
+ *      (publié immédiatement, tagué « proposé par la communauté »)
  */
 class ItineraryController extends Controller
 {
+    use SyncsItinerary;
+
+    /**
+     * Un utilisateur connecté (pas besoin d'être admin) propose son propre
+     * itinéraire. Publié tout de suite : created_by_user_id identifie
+     * l'auteur, ce qui permet d'afficher le badge côté frontend.
+     */
+    public function store(Request $request)
+    {
+        $data = $this->validateItineraryPayload($request);
+
+        return DB::transaction(function () use ($data, $request) {
+            $itinerary = Itinerary::create([
+                ...$this->itineraryAttributes($data),
+                'created_by_user_id' => $request->user()->id,
+            ]);
+            $this->syncItineraryTranslations($itinerary, $data['translations']);
+            $this->syncItinerarySites($itinerary, $data['sites']);
+
+            return response()->json(['slug' => $itinerary->slug], 201);
+        });
+    }
+
     public function index(Request $request)
     {
         $lang = $request->query('lang', 'fr');
 
         // Eager load des traductions + sites.translations pour éviter le N+1
         // (sinon Laravel referait une requête par itinéraire pour ses sites).
-        return Itinerary::with(['translations', 'sites.translations'])
+        return Itinerary::with(['translations', 'sites.translations', 'creator'])
             ->get()
             ->map(fn (Itinerary $itinerary) => $this->formatList($itinerary, $lang));
     }
@@ -29,7 +56,7 @@ class ItineraryController extends Controller
     {
         $lang = $request->query('lang', 'fr');
 
-        $itinerary = Itinerary::with(['translations', 'sites.translations'])
+        $itinerary = Itinerary::with(['translations', 'sites.translations', 'creator'])
             ->where('slug', $slug)
             ->firstOrFail();
 
@@ -66,6 +93,8 @@ class ItineraryController extends Controller
             'summary' => $t?->summary,
             'sites_count' => $itinerary->sites->count(),
             'wilayas' => $itinerary->sites->pluck('wilaya')->unique()->values(),
+            'is_community' => $itinerary->created_by_user_id !== null,
+            'creator_name' => $itinerary->creator?->name,
         ];
     }
 
@@ -106,6 +135,8 @@ class ItineraryController extends Controller
             'summary' => $t?->summary,
             'description' => $t?->description,
             'sites' => $sites,
+            'is_community' => $itinerary->created_by_user_id !== null,
+            'creator_name' => $itinerary->creator?->name,
         ];
     }
 }

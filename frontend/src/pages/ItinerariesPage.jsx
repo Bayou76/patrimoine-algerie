@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { api } from '../services/api'
 import { useLanguage } from '../context/LanguageContext'
+import { useAuth } from '../context/AuthContext'
 import Reveal from '../components/Reveal'
 import { SkeletonSiteGrid } from '../components/Skeleton'
 import { usePageMeta } from '../utils/pageMeta'
@@ -21,6 +22,7 @@ const THEMES = ['romain', 'sud', 'villes', 'spirituel', 'naturel']
 
 function ItinerariesPage() {
   const { language } = useLanguage()
+  const { user } = useAuth()
   const { t } = useTranslation()
   const [items, setItems] = useState(null) // null = pas encore chargé
   const [theme, setTheme] = useState('') // '' = tous
@@ -57,6 +59,14 @@ function ItinerariesPage() {
           <p className="text-sand-100/80 mt-3 max-w-2xl mx-auto text-lg">
             {t('itineraries_page.subtitle')}
           </p>
+          {user && (
+            <Link
+              to="/itineraires/proposer"
+              className="inline-flex items-center gap-2 mt-5 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-600 rounded-full px-5 py-2.5 text-sm transition"
+            >
+              🌍 {t('itineraries_page.propose')}
+            </Link>
+          )}
         </div>
       </div>
 
@@ -104,10 +114,17 @@ function ItinerariesPage() {
                   to={`/itineraires/${item.slug}`}
                   className="group block bg-white rounded-2xl overflow-hidden border border-sand-200 hover:border-terracotta-400 hover:shadow-xl transition h-full"
                 >
-                  <div
-                    className="h-48 bg-cover bg-center bg-sand-200 group-hover:scale-105 transition-transform duration-500"
-                    style={item.cover_image ? { backgroundImage: `url(${item.cover_image})` } : undefined}
-                  />
+                  <div className="relative">
+                    <div
+                      className="h-48 bg-cover bg-center bg-sand-200 group-hover:scale-105 transition-transform duration-500"
+                      style={item.cover_image ? { backgroundImage: `url(${item.cover_image})` } : undefined}
+                    />
+                    {item.is_community && (
+                      <span className="absolute top-2 right-2 text-[10px] font-600 bg-gold-400 text-teal-950 px-2 py-0.5 rounded-full shadow">
+                        🌍 {t('itineraries_page.community')}
+                      </span>
+                    )}
+                  </div>
                   <div className="p-5">
                     {/* Rangée de tags : durée, difficulté, nombre d'étapes */}
                     <div className="flex flex-wrap gap-2 mb-2">

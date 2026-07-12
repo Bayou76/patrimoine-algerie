@@ -104,12 +104,20 @@ function AdminPage() {
             {t('admin.total_sites', { count: sites.length })}
           </p>
         </div>
-        <Link
-          to="/admin/sites/nouveau"
-          className="bg-terracotta-500 hover:bg-terracotta-600 text-white font-600 rounded-full px-4 py-2 transition"
-        >
-          {t('admin.new_site')}
-        </Link>
+        <div className="flex gap-2">
+          <Link
+            to="/admin/itineraires"
+            className="bg-teal-800 hover:bg-teal-900 text-white font-600 rounded-full px-4 py-2 transition"
+          >
+            🗺️ Itinéraires
+          </Link>
+          <Link
+            to="/admin/sites/nouveau"
+            className="bg-terracotta-500 hover:bg-terracotta-600 text-white font-600 rounded-full px-4 py-2 transition"
+          >
+            {t('admin.new_site')}
+          </Link>
+        </div>
       </div>
 
       {/* Tuiles totaux globaux */}

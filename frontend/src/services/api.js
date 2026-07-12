@@ -89,6 +89,8 @@ export const api = {
   // Public — itinéraires
   getItineraries: (lang) => request(`/itineraries?lang=${lang}`),
   getItinerary: (slug, lang) => request(`/itineraries/${slug}?lang=${lang}`),
+  // Connecté — proposer un itinéraire (publié tout de suite, tagué communauté)
+  proposeItinerary: (payload) => request('/itineraries', { method: 'POST', body: payload }),
 
   // Admin — CRUD complet + stats du dashboard
   adminGetStats: () => request('/admin/stats'),
@@ -98,4 +100,13 @@ export const api = {
     request(`/admin/sites/${siteId}`, { method: 'PUT', body: payload }),
   adminDeleteSite: (siteId) =>
     request(`/admin/sites/${siteId}`, { method: 'DELETE' }),
+
+  // Admin — CRUD itinéraires
+  adminGetItineraries: () => request('/admin/itineraries'),
+  adminGetItinerary: (id) => request(`/admin/itineraries/${id}`),
+  adminCreateItinerary: (payload) => request('/admin/itineraries', { method: 'POST', body: payload }),
+  adminUpdateItinerary: (id, payload) =>
+    request(`/admin/itineraries/${id}`, { method: 'PUT', body: payload }),
+  adminDeleteItinerary: (id) =>
+    request(`/admin/itineraries/${id}`, { method: 'DELETE' }),
 }

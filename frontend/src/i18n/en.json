@@ -64,6 +64,9 @@
     "title": "Thematic itineraries",
     "subtitle": "Ready-made journeys to discover Algeria differently — on the trail of the Romans, in the deep South, in Algiers…",
     "back": "Back to itineraries",
+    "propose": "Propose an itinerary",
+    "community": "Community",
+    "proposed_by": "Proposed by {{name}}",
     "stages": "Stages",
     "stops": "stops",
     "themes": {

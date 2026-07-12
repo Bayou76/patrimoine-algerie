@@ -64,6 +64,9 @@
     "title": "Itinéraires thématiques",
     "subtitle": "Des parcours prêts à suivre pour découvrir l'Algérie autrement — sur les traces des Romains, dans le Grand Sud, à Alger…",
     "back": "Retour aux itinéraires",
+    "propose": "Proposer un itinéraire",
+    "community": "Communauté",
+    "proposed_by": "Proposé par {{name}}",
     "stages": "Les étapes",
     "stops": "étapes",
     "themes": {

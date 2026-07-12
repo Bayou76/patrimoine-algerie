@@ -21,11 +21,18 @@ class Itinerary extends Model
         'difficulty',
         'theme',
         'cover_image',
+        'created_by_user_id',
     ];
 
     public function translations()
     {
         return $this->hasMany(ItineraryTranslation::class);
+    }
+
+    /** Auteur si proposé par un utilisateur ; null pour un itinéraire officiel. */
+    public function creator()
+    {
+        return $this->belongsTo(User::class, 'created_by_user_id');
     }
 
     /**

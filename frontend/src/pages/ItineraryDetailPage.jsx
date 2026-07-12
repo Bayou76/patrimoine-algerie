@@ -85,6 +85,11 @@ function ItineraryDetailPage() {
           <Link to="/itineraires" className="text-sand-100/80 hover:text-terracotta-400 text-sm">
             ← {t('itineraries_page.back')}
           </Link>
+          {itinerary.is_community && (
+            <span className="inline-block mt-3 text-xs font-600 bg-gold-400 text-teal-950 px-2.5 py-1 rounded-full">
+              🌍 {t('itineraries_page.proposed_by', { name: itinerary.creator_name })}
+            </span>
+          )}
           <h1 className="font-display font-800 text-4xl sm:text-5xl mt-3 tracking-tight">
             {itinerary.title}
           </h1>

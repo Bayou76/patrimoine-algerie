@@ -11,6 +11,7 @@
  * Route::get(path, [ClasseContrôleur, 'méthode']) associe une URL à une méthode.
  */
 
+use App\Http\Controllers\Api\AdminItineraryController;
 use App\Http\Controllers\Api\AdminSiteController;
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\InteractionController;
@@ -42,6 +43,9 @@ Route::middleware('auth:sanctum')->group(function () {
 
     Route::post('/sites/{site}/interactions/{type}', [InteractionController::class, 'toggle']);
 
+    // Proposition d'itinéraire par un utilisateur inscrit (pas besoin d'être admin).
+    Route::post('/itineraries', [ItineraryController::class, 'store']);
+
     Route::get('/me', [MeController::class, 'show']);
     // Route utilitaire pour récupérer l'utilisateur connecté (utile côté React).
     Route::get('/user', function (Request $request) {
@@ -56,5 +60,11 @@ Route::middleware('auth:sanctum')->group(function () {
         Route::post('/sites', [AdminSiteController::class, 'store']);
         Route::put('/sites/{site}', [AdminSiteController::class, 'update']);
         Route::delete('/sites/{site}', [AdminSiteController::class, 'destroy']);
+
+        Route::get('/itineraries', [AdminItineraryController::class, 'index']);
+        Route::get('/itineraries/{itinerary}', [AdminItineraryController::class, 'edit']);
+        Route::post('/itineraries', [AdminItineraryController::class, 'store']);
+        Route::put('/itineraries/{itinerary}', [AdminItineraryController::class, 'update']);
+        Route::delete('/itineraries/{itinerary}', [AdminItineraryController::class, 'destroy']);
     });
 });

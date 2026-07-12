@@ -29,6 +29,10 @@ import MePage from './pages/MePage'
 import AdminPage from './pages/AdminPage'
 import AdminSiteNewPage from './pages/AdminSiteNewPage'
 import AdminSiteEditPage from './pages/AdminSiteEditPage'
+import AdminItinerariesPage from './pages/AdminItinerariesPage'
+import AdminItineraryNewPage from './pages/AdminItineraryNewPage'
+import AdminItineraryEditPage from './pages/AdminItineraryEditPage'
+import ProposeItineraryPage from './pages/ProposeItineraryPage'
 import LanguageSwitcher from './components/LanguageSwitcher'
 import ThemeToggle from './components/ThemeToggle'
 import Footer from './components/Footer'
@@ -210,6 +214,7 @@ function App() {
           <Route path="/sites/:slug" element={<SiteDetailPage />} />
           <Route path="/chronologie" element={<GlobalTimelinePage />} />
           <Route path="/itineraires" element={<ItinerariesPage />} />
+          <Route path="/itineraires/proposer" element={<ProposeItineraryPage />} />
           <Route path="/itineraires/:slug" element={<ItineraryDetailPage />} />
           <Route path="/infos-pratiques" element={<PracticalInfoPage />} />
           <Route path="/login" element={<LoginPage />} />
@@ -218,6 +223,9 @@ function App() {
           <Route path="/admin" element={<AdminPage />} />
           <Route path="/admin/sites/nouveau" element={<AdminSiteNewPage />} />
           <Route path="/admin/sites/:id/modifier" element={<AdminSiteEditPage />} />
+          <Route path="/admin/itineraires" element={<AdminItinerariesPage />} />
+          <Route path="/admin/itineraires/nouveau" element={<AdminItineraryNewPage />} />
+          <Route path="/admin/itineraires/:id/modifier" element={<AdminItineraryEditPage />} />
         </Routes>
       </main>
       <Footer />

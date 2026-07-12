@@ -11,7 +11,8 @@
 set -e
 
 php artisan config:cache
-php artisan route:cache
+# route:cache retiré : provoquait des routes manquantes en prod avec certaines
+# définitions (à investiguer), le gain de perf est mineur vu le nombre de routes.
 php artisan migrate --force
 
 exec php artisan serve --host=0.0.0.0 --port="${PORT:-8000}"
