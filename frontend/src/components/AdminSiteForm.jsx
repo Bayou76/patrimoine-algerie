@@ -126,6 +126,7 @@ function AdminSiteForm({ initial, onSubmit, submitLabel }) {
     image_path: initial?.image_path ?? '',
     opening_hours: initial?.opening_hours ?? '',
     entry_fee: initial?.entry_fee ?? '',
+    unesco_year: initial?.unesco_year ?? '',
     translations: buildTranslations(),
     images: initial?.images?.length ? [...initial.images] : [],
     timeline: buildTimeline(),
@@ -190,6 +191,7 @@ function AdminSiteForm({ initial, onSubmit, submitLabel }) {
         ...form,
         latitude: Number(form.latitude),
         longitude: Number(form.longitude),
+        unesco_year: form.unesco_year ? Number(form.unesco_year) : null,
         timeline: form.timeline.map((e) => ({ ...e, year: Number(e.year) })),
       })
     } catch (err) {
@@ -263,6 +265,13 @@ function AdminSiteForm({ initial, onSubmit, submitLabel }) {
           </div>
           <TextField label="Horaires" value={form.opening_hours} onChange={(v) => set('opening_hours', v)} />
           <TextField label="Tarif" value={form.entry_fee} onChange={(v) => set('entry_fee', v)} />
+          <TextField
+            label="Année d'inscription UNESCO (laisser vide si non inscrit)"
+            type="number"
+            value={form.unesco_year}
+            onChange={(v) => set('unesco_year', v)}
+            placeholder="1982"
+          />
         </div>
       </section>
 

@@ -26,6 +26,7 @@ class Site extends Model
         'slug',
         'opening_hours',
         'entry_fee',
+        'unesco_year',
     ];
 
     // Conversions automatiques de types à la lecture/écriture.

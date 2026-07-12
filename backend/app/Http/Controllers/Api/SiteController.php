@@ -91,6 +91,7 @@ class SiteController extends Controller
             'image_path' => $site->image_path,
             'opening_hours' => $site->opening_hours,
             'entry_fee' => $site->entry_fee,
+            'unesco_year' => $site->unesco_year,
             'translations' => $site->translations->map(fn ($translation) => [
                 'language_code' => $translation->language_code,
                 'name' => $translation->name,

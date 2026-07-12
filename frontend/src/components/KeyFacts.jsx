@@ -22,6 +22,7 @@ function KeyFacts({ site, timeline }) {
   const oldestEvent = timeline?.[0]
 
   const facts = [
+    site.unesco_year && { icon: '🏛️', text: t('detail.unesco_since', { year: site.unesco_year }) },
     { icon: '🏷️', text: t(`categories.${site.category}`, site.category) },
     { icon: '📍', text: site.wilaya },
     oldestEvent && { icon: '📜', text: oldestEvent.period_label },
