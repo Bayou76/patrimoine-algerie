@@ -9,3 +9,4 @@
 # Dépendances (chaque projet a son propre .gitignore aussi)
 node_modules/
 vendor/
+.vercel
