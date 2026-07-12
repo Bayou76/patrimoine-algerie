@@ -24,6 +24,18 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Google Analytics (GA4). send_page_view désactivé car Athar est une
+         SPA (React Router) : les vues de page sont envoyées manuellement à
+         chaque changement de route (voir src/utils/analytics.js), sinon
+         Analytics ne verrait que le tout premier chargement. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-62TMQPK2EW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-62TMQPK2EW', { send_page_view: false });
+    </script>
   </head>
   <body>
     <div id="root"></div>

@@ -33,6 +33,7 @@ import LanguageSwitcher from './components/LanguageSwitcher'
 import ThemeToggle from './components/ThemeToggle'
 import Footer from './components/Footer'
 import InstallPrompt from './components/InstallPrompt'
+import { trackPageView } from './utils/analytics'
 
 /**
  * Nav — la barre du haut, responsive.
@@ -189,6 +190,15 @@ function Nav() {
  * même quand la page est courte.
  */
 function App() {
+  const location = useLocation()
+
+  // Envoie une vue de page à Google Analytics à chaque changement de route.
+  // Nécessaire car send_page_view est désactivé dans index.html (voir
+  // src/utils/analytics.js pour le pourquoi).
+  useEffect(() => {
+    trackPageView(location.pathname + location.search, document.title)
+  }, [location.pathname, location.search])
+
   return (
     <div className="min-h-screen flex flex-col">
       <Nav />
