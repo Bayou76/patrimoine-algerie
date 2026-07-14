@@ -35,6 +35,7 @@ import StreetViewButton from '../components/StreetViewButton'
 import ShareButton from '../components/ShareButton'
 import AudioGuideButton from '../components/AudioGuideButton'
 import KeyFacts from '../components/KeyFacts'
+import GalleryLightbox from '../components/GalleryLightbox'
 import { usePageMeta, buildSiteJsonLd } from '../utils/pageMeta'
 
 function SiteDetailPage() {
@@ -55,6 +56,7 @@ function SiteDetailPage() {
   const { t } = useTranslation()
   const [site, setSite] = useState(null)
   const [error, setError] = useState(null)
+  const [lightboxIndex, setLightboxIndex] = useState(null) // null = fermé, sinon index de l'image ouverte
 
   // useCallback pour que loadSite garde la même référence entre les renders,
   // ce qui évite les boucles infinies avec useEffect.
@@ -233,11 +235,18 @@ function SiteDetailPage() {
                 {site.images.map((image, idx) => (
                   <Reveal key={image.id} delay={idx * 80}>
                     <figure className="group overflow-hidden rounded-xl shadow-sm">
-                      <img
-                        src={image.path}
-                        alt={image.caption ?? translation?.name}
-                        className="w-full h-32 object-cover transition-transform duration-500 group-hover:scale-110"
-                      />
+                      <button
+                        type="button"
+                        onClick={() => setLightboxIndex(idx)}
+                        className="block w-full cursor-zoom-in"
+                        aria-label={t('detail.gallery')}
+                      >
+                        <img
+                          src={image.path}
+                          alt={image.caption ?? translation?.name}
+                          className="w-full h-32 object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
+                      </button>
                       {image.caption && (
                         <figcaption className="text-xs text-teal-900/60 mt-1">
                           {image.caption}
@@ -249,6 +258,15 @@ function SiteDetailPage() {
               </div>
             </section>
           </Reveal>
+        )}
+
+        {lightboxIndex !== null && (
+          <GalleryLightbox
+            images={site.images}
+            index={lightboxIndex}
+            onClose={() => setLightboxIndex(null)}
+            onNavigate={setLightboxIndex}
+          />
         )}
 
         {/* --- Avis utilisateurs --- */}
