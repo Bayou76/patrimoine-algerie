@@ -37,6 +37,15 @@ return [
 
     'mailers' => [
 
+        // Mailtrap Sending (envoi réel, via l'API) : utilisé en production.
+        // Le domaine d'envoi par défaut (non vérifié) est demomailtrap.co —
+        // MAIL_FROM_ADDRESS doit rester sur ce domaine tant qu'aucun domaine
+        // personnalisé n'est vérifié sur Mailtrap.
+        'mailtrap' => [
+            'transport' => 'mailtrap',
+            'key' => env('MAILTRAP_API_KEY'),
+        ],
+
         'smtp' => [
             'transport' => 'smtp',
             'scheme' => env('MAIL_SCHEME'),
