@@ -7,9 +7,13 @@
  */
 
 import { useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
+import { getWikimediaCreditUrl } from '../utils/wikimediaCredit'
 
 function GalleryLightbox({ images, index, onClose, onNavigate }) {
+  const { t } = useTranslation()
   const image = images[index]
+  const creditUrl = image ? getWikimediaCreditUrl(image.path) : null
 
   // Navigation clavier : flèches gauche/droite + Échap pour fermer.
   useEffect(() => {
@@ -64,9 +68,22 @@ function GalleryLightbox({ images, index, onClose, onNavigate }) {
         {image.caption && (
           <figcaption className="text-white/80 text-sm mt-3 text-center">{image.caption}</figcaption>
         )}
-        {images.length > 1 && (
-          <p className="text-white/50 text-xs mt-2">{index + 1} / {images.length}</p>
-        )}
+        <div className="flex items-center gap-3 mt-2">
+          {images.length > 1 && (
+            <p className="text-white/50 text-xs">{index + 1} / {images.length}</p>
+          )}
+          {creditUrl && (
+            <a
+              href={creditUrl}
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              onClick={(event) => event.stopPropagation()}
+              className="text-white/50 hover:text-white text-xs underline underline-offset-2"
+            >
+              {t('detail.photo_credit')}
+            </a>
+          )}
+        </div>
       </figure>
 
       {images.length > 1 && (

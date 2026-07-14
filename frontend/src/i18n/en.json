@@ -155,6 +155,7 @@
     "audio_expand": "Show controls",
     "audio_collapse": "Hide controls",
     "key_facts": "Key facts",
+    "photo_credit": "ⓘ Photo credit",
     "unesco_since": "UNESCO World Heritage Site since {{year}}",
     "open_in_maps_hint": "Open in Google Maps",
     "view_360": "360° view",
@@ -314,7 +315,7 @@
     "natural_sites": "Natural sites",
     "sacred_places": "Sacred places",
     "about": "About",
-    "about_text": "Photos sourced from Wikimedia Commons, under open licenses. Content is informational — check practical information (opening hours, prices) before your visit.",
+    "about_text": "Photos sourced from Wikimedia Commons, under open licenses (mostly CC BY-SA) — each photo's author is credited via the accompanying \"Photo credit\" link. Content is informational — check practical information (opening hours, prices) before your visit.",
     "credit": "Algerian Heritage Guide",
     "designed_by": "Designed by {{name}} with ❤️ for heritage"
   }

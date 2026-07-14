@@ -155,6 +155,7 @@
     "audio_expand": "Afficher les commandes",
     "audio_collapse": "Replier les commandes",
     "key_facts": "À retenir",
+    "photo_credit": "ⓘ Crédit photo",
     "unesco_since": "Inscrit au patrimoine mondial UNESCO depuis {{year}}",
     "open_in_maps_hint": "Ouvrir dans Google Maps",
     "view_360": "Vue 360°",
@@ -314,7 +315,7 @@
     "natural_sites": "Sites naturels",
     "sacred_places": "Lieux sacrés",
     "about": "À propos",
-    "about_text": "Photos issues de Wikimedia Commons, sous licences libres. Contenu à vocation informative — vérifiez les informations pratiques (horaires, tarifs) avant votre visite.",
+    "about_text": "Photos issues de Wikimedia Commons, sous licences libres (majoritairement CC BY-SA) — l'auteur de chaque photo est indiqué via le lien « Crédit photo » qui l'accompagne. Contenu à vocation informative — vérifiez les informations pratiques (horaires, tarifs) avant votre visite.",
     "credit": "Guide du patrimoine algérien",
     "designed_by": "Conçu par {{name}} avec ❤️ pour le patrimoine"
   }

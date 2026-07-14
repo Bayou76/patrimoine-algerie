@@ -37,6 +37,7 @@ import AudioGuideButton from '../components/AudioGuideButton'
 import KeyFacts from '../components/KeyFacts'
 import GalleryLightbox from '../components/GalleryLightbox'
 import { usePageMeta, buildSiteJsonLd } from '../utils/pageMeta'
+import { getWikimediaCreditUrl } from '../utils/wikimediaCredit'
 
 function SiteDetailPage() {
   const { slug } = useParams() // Récupère :slug depuis l'URL
@@ -114,6 +115,19 @@ function SiteDetailPage() {
           className="absolute inset-0 bg-cover bg-center animate-hero-zoom"
           style={{ backgroundImage: `url(${site.image_path})` }}
         />
+        {/* Crédit photo Wikimedia Commons : la licence CC BY-SA impose de
+            créditer l'auteur — on renvoie vers la page source qui l'affiche
+            toujours de façon fiable, plutôt que de dupliquer un nom en dur. */}
+        {getWikimediaCreditUrl(site.image_path) && (
+          <a
+            href={getWikimediaCreditUrl(site.image_path)}
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            className="absolute top-3 right-3 text-[11px] text-white/70 hover:text-white bg-black/30 hover:bg-black/50 rounded-full px-2.5 py-1 backdrop-blur-sm transition"
+          >
+            {t('detail.photo_credit')}
+          </a>
+        )}
         {/* Overlay dégradé pour lisibilité du texte blanc sur photo */}
         <div className="absolute inset-0 flex items-end">
           <div className="w-full bg-gradient-to-t from-teal-950 via-teal-950/60 to-transparent p-6 pt-24">
