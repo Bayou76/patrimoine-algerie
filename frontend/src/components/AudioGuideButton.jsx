@@ -21,9 +21,18 @@
  *
  * La voix suit la langue active du site (fr-FR, ar-DZ, en-US) pour une
  * prononciation correcte.
+ *
+ * Rendu via createPortal directement dans document.body : ce composant est
+ * utilisé à l'intérieur d'un <Reveal> (animation d'apparition au scroll) qui
+ * applique un `transform` CSS sur son conteneur — et un ancêtre avec
+ * transform crée un nouveau "containing block", ce qui casse totalement
+ * position:fixed (l'élément se met alors à suivre le scroll de cet ancêtre
+ * au lieu de rester fixe à l'écran). Le portail contourne le problème en
+ * sortant complètement la bulle de cette hiérarchie DOM.
  */
 
 import { useEffect, useRef, useState } from 'react'
+import { createPortal } from 'react-dom'
 import { useTranslation } from 'react-i18next'
 
 const LOCALE_MAP = { fr: 'fr-FR', ar: 'ar-SA', en: 'en-US' }
@@ -199,7 +208,7 @@ function AudioGuideButton({ text, language }) {
     onPointerCancel: handlePointerUp,
   }
 
-  return (
+  return createPortal(
     <div
       className={`fixed z-40 touch-none select-none ${position ? '' : 'bottom-4 right-4'}`}
       style={position ? { left: position.x, top: position.y } : undefined}
@@ -280,7 +289,8 @@ function AudioGuideButton({ text, language }) {
           </button>
         </div>
       )}
-    </div>
+    </div>,
+    document.body
   )
 }
 
