@@ -152,6 +152,8 @@
     "audio_forward": "تقدم",
     "audio_speed": "سرعة القراءة",
     "audio_close": "إغلاق المشغل",
+    "audio_expand": "إظهار أدوات التحكم",
+    "audio_collapse": "إخفاء أدوات التحكم",
     "key_facts": "أهم المعلومات",
     "unesco_since": "مسجل في التراث العالمي لليونسكو منذ {{year}}",
     "open_in_maps_hint": "افتح في خرائط جوجل",

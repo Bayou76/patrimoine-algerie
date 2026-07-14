@@ -16,10 +16,10 @@
  * La voix suit la langue active du site (fr-FR, ar-DZ, en-US) pour une
  * prononciation correcte.
  *
- * Une fois la lecture démarrée, un petit lecteur reste collé en bas de
- * l'écran (position fixed) avec les mêmes commandes : on peut ainsi
- * continuer à scroller et lire le reste de la page tout en gardant la main
- * sur la lecture, sans devoir remonter jusqu'au bouton d'origine.
+ * Une fois la lecture démarrée, une petite bulle 🎧 reste collée à l'écran
+ * (position fixed) pendant qu'on scrolle. Un clic dessus déplie les
+ * commandes (pause/reprise, recul, avance, vitesse, fermer) ; un second clic
+ * sur l'icône casque les replie, sans jamais interrompre la lecture.
  */
 
 import { useEffect, useRef, useState } from 'react'
@@ -44,6 +44,9 @@ function AudioGuideButton({ text, language }) {
   // reste true tant qu'on ne ferme pas explicitement ce lecteur (la pause
   // seule ne le fait pas disparaître, pour pouvoir reprendre facilement).
   const [started, setStarted] = useState(false)
+  // La bulle flottante démarre repliée (juste l'icône casque) ; un clic
+  // dessus la déplie pour révéler les commandes.
+  const [expanded, setExpanded] = useState(false)
 
   // Refs (pas de re-render nécessaire) : phrases découpées + position courante.
   const sentencesRef = useRef([])
@@ -103,6 +106,7 @@ function AudioGuideButton({ text, language }) {
     window.speechSynthesis.cancel()
     setPlaying(false)
     setStarted(false)
+    setExpanded(false)
     indexRef.current = 0
   }
 
@@ -177,11 +181,34 @@ function AudioGuideButton({ text, language }) {
         {started && !playing && transportControls}
       </div>
 
-      {/* Lecteur flottant : apparaît dès le premier lancement et reste collé
-          en bas de l'écran pendant le scroll, pour garder la main sur la
-          lecture tout en continuant à lire la page. */}
-      {started && (
+      {/* Bulle flottante : apparaît dès le premier lancement et reste collée
+          à l'écran pendant le scroll. Repliée par défaut (juste l'icône
+          casque) ; un clic la déplie pour révéler les commandes. */}
+      {started && !expanded && (
+        <button
+          type="button"
+          onClick={() => setExpanded(true)}
+          aria-label={t('detail.audio_expand')}
+          title={t('detail.audio_expand')}
+          className={`fixed bottom-4 right-4 z-40 w-12 h-12 flex items-center justify-center rounded-full shadow-lg transition-all ${
+            playing ? 'bg-teal-800 text-white animate-pulse' : 'bg-white text-teal-950 border border-sand-200'
+          }`}
+        >
+          <span className="text-xl">🎧</span>
+        </button>
+      )}
+
+      {started && expanded && (
         <div className="fixed bottom-4 inset-x-4 sm:inset-x-auto sm:right-4 sm:left-auto z-40 flex items-center gap-1.5 bg-white/95 backdrop-blur border border-sand-200 rounded-full shadow-lg px-3 py-2 sm:max-w-fit mx-auto sm:mx-0">
+          <button
+            type="button"
+            onClick={() => setExpanded(false)}
+            aria-label={t('detail.audio_collapse')}
+            title={t('detail.audio_collapse')}
+            className="w-10 h-10 shrink-0 flex items-center justify-center rounded-full bg-teal-950/5 text-teal-950"
+          >
+            <span className="text-lg">🎧</span>
+          </button>
           <button
             type="button"
             onClick={handlePlayPause}

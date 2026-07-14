@@ -152,6 +152,8 @@
     "audio_forward": "Avancer",
     "audio_speed": "Vitesse de lecture",
     "audio_close": "Fermer le lecteur",
+    "audio_expand": "Afficher les commandes",
+    "audio_collapse": "Replier les commandes",
     "key_facts": "À retenir",
     "unesco_since": "Inscrit au patrimoine mondial UNESCO depuis {{year}}",
     "open_in_maps_hint": "Ouvrir dans Google Maps",
