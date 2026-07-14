@@ -81,7 +81,7 @@ function PrivacyPolicyPage() {
       <Section title="Contact">
         <p>
           Pour toute question concernant cette politique de confidentialité ou vos données personnelles,
-          contactez-nous à : <a href="mailto:bienvenue@athar-algerie.com" className="text-terracotta-600 underline">bienvenue@athar-algerie.com</a>
+          contactez-nous à : <a href="mailto:baya.sebia.dev@outlook.com" className="text-terracotta-600 underline">baya.sebia.dev@outlook.com</a>
         </p>
       </Section>
     </div>

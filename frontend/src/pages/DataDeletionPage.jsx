@@ -18,8 +18,8 @@ function DataDeletionPage() {
           Facebook, envoyez une demande à l'adresse suivante :
         </p>
         <p>
-          <a href="mailto:sebia.baya@gmail.com" className="text-terracotta-600 underline font-600">
-            sebia.baya@gmail.com
+          <a href="mailto:baya.sebia.dev@outlook.com" className="text-terracotta-600 underline font-600">
+            baya.sebia.dev@outlook.com
           </a>
         </p>
         <p>
