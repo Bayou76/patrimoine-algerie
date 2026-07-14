@@ -302,6 +302,9 @@ class SitesSeeder extends Seeder
                 'entry_fee' => '200 DA — à titre indicatif',
                 'image' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Hippo_Regius%2C_Africa_Proconsularis%2C_Algeria_-_52575435338.jpg/500px-Hippo_Regius%2C_Africa_Proconsularis%2C_Algeria_-_52575435338.jpg',
                 'gallery' => [
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Hippo_Regius_-_Annaba_02.jpg/1280px-Hippo_Regius_-_Annaba_02.jpg', 'caption' => 'Vestiges romains du site d\'Hippone'],
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Hippo_Regius_Algeria.jpg/1280px-Hippo_Regius_Algeria.jpg', 'caption' => 'Ruines antiques d\'Hippo Regius'],
+
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Hippo_Regius_Algeria_5.jpg/500px-Hippo_Regius_Algeria_5.jpg', 'caption' => 'Ruines romaines'],
                 ],
                 'translations' => [
@@ -338,6 +341,8 @@ class SitesSeeder extends Seeder
                 'entry_fee' => 'Gratuit — à titre indicatif',
                 'image' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/28-2_Kal%C3%A2a_de_Beni_Hammad_%283%29.jpg/500px-28-2_Kal%C3%A2a_de_Beni_Hammad_%283%29.jpg',
                 'gallery' => [
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/28-2_Kal%C3%A2a_de_Beni_Hammad_%282%29.jpg/1280px-28-2_Kal%C3%A2a_de_Beni_Hammad_%282%29.jpg', 'caption' => 'Ruines de la forteresse hammadide'],
+
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/28-2_Kal%C3%A2a_de_Beni_Hammad_%284%29.jpg/500px-28-2_Kal%C3%A2a_de_Beni_Hammad_%284%29.jpg', 'caption' => 'Vestiges du minaret de la grande mosquée'],
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Maquette_de_Kalaa_de_Beni_Hammad.jpg/500px-Maquette_de_Kalaa_de_Beni_Hammad.jpg', 'caption' => 'Maquette de la cité reconstituée'],
                 ],
@@ -375,6 +380,8 @@ class SitesSeeder extends Seeder
                 'entry_fee' => 'Gratuit (guide payant pour Beni Isguen) — à titre indicatif',
                 'image' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Panoramic_view_of_Ksar_Gharda%C3%AFa%2C_Algeria_2006.jpg/500px-Panoramic_view_of_Ksar_Gharda%C3%AFa%2C_Algeria_2006.jpg',
                 'gallery' => [
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Ksar_Beni_Isguen_1.jpg/1280px-Ksar_Beni_Isguen_1.jpg', 'caption' => 'Vue du ksar de Beni Isguen'],
+
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Ksar_Beni_Isguen_1.jpg/500px-Ksar_Beni_Isguen_1.jpg', 'caption' => 'Le ksar de Beni Isguen'],
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Mzab_Gharda%C3%AFa.jpg/500px-Mzab_Gharda%C3%AFa.jpg', 'caption' => 'Le ksar de Bounoura'],
                 ],
@@ -410,6 +417,8 @@ class SitesSeeder extends Seeder
                 'entry_fee' => 'Gratuit — à titre indicatif',
                 'image' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Grande_mosqu%C3%A9e_et_d%C3%A9pendance_Minaret_de_la_Mosqu%C3%A9e_003.jpg/500px-Grande_mosqu%C3%A9e_et_d%C3%A9pendance_Minaret_de_la_Mosqu%C3%A9e_003.jpg',
                 'gallery' => [
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Grande_mosquee_Tlemcen_%28angle%29.jpg/1280px-Grande_mosquee_Tlemcen_%28angle%29.jpg', 'caption' => 'Vue d\'angle de la Grande Mosquée'],
+
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Grande_mosqu%C3%A9e_et_d%C3%A9pendance_Minaret_de_la_Mosqu%C3%A9e_014.jpg/500px-Grande_mosqu%C3%A9e_et_d%C3%A9pendance_Minaret_de_la_Mosqu%C3%A9e_014.jpg', 'caption' => 'Cour et minaret (1236)'],
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/L%27espace_royal_devant_le_mihrab_de_la_Grande_Mosqu%C3%A9e_de_Tlemcen.jpg/500px-L%27espace_royal_devant_le_mihrab_de_la_Grande_Mosqu%C3%A9e_de_Tlemcen.jpg', 'caption' => 'Le mihrab richement décoré'],
                 ],
@@ -445,6 +454,9 @@ class SitesSeeder extends Seeder
                 'entry_fee' => 'Gratuit (accès parc) — à titre indicatif',
                 'image' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Montagne_de_Chr%C3%A9a%2C.jpg/500px-Montagne_de_Chr%C3%A9a%2C.jpg',
                 'gallery' => [
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Chrea_National_Park.jpg/1280px-Chrea_National_Park.jpg', 'caption' => 'Paysage du parc national de Chréa'],
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Waterfall_Chrea.jpg/1280px-Waterfall_Chrea.jpg', 'caption' => 'Cascade dans le massif de Chréa'],
+
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Chrea_blida_algerie.jpg/500px-Chrea_blida_algerie.jpg', 'caption' => 'Le massif de Chréa'],
                 ],
                 'translations' => [
@@ -477,6 +489,8 @@ class SitesSeeder extends Seeder
                 'entry_fee' => '200 DA — à titre indicatif',
                 'image' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/View_of_Tipasa_01.jpg/500px-View_of_Tipasa_01.jpg',
                 'gallery' => [
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Roman_Ruins_of_Tipaza.jpg/1280px-Roman_Ruins_of_Tipaza.jpg', 'caption' => 'Ruines romaines de Tipaza en bord de mer'],
+
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Large_Christian_Basilica_%28Tipasa%29_02.jpg/500px-Large_Christian_Basilica_%28Tipasa%29_02.jpg', 'caption' => 'La grande basilique chrétienne'],
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Amphitheatre_%28Tipasa%29_01.jpg/500px-Amphitheatre_%28Tipasa%29_01.jpg', 'caption' => "L'amphithéâtre romain"],
                 ],
@@ -512,6 +526,9 @@ class SitesSeeder extends Seeder
                 'entry_fee' => 'Gratuit — à titre indicatif',
                 'image' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Roman_ruins_of_Saint_Augustin_%2C_Souk_Ahras_%28Algeria%29_%D8%A7%D9%84%D8%A2%D8%AB%D8%A7%D8%B1_%D8%A7%D9%84%D8%B1%D9%88%D9%85%D8%A7%D9%86%D9%8A%D8%A9_%D9%84%D9%84%D9%82%D8%AF%D9%8A%D8%B3_%D8%A3%D9%88%D8%BA%D8%B3%D8%B7%D9%8A%D9%86_%D8%A8%D9%88%D9%84%D8%A7%D9%8A%D8%A9_%D8%B3%D9%88%D9%82_%D8%A3%D9%87%D8%B1%D8%A7%D8%B3_%D8%8C_%D8%A7%D9%84%D8%AC%D8%B2%D8%A7%D8%A6%D8%B1.jpg/500px-Roman_ruins_of_Saint_Augustin_%2C_Souk_Ahras_%28Algeria%29_%D8%A7%D9%84%D8%A2%D8%AB%D8%A7%D8%B1_%D8%A7%D9%84%D8%B1%D9%88%D9%85%D8%A7%D9%86%D9%8A%D8%A9_%D9%84%D9%84%D9%82%D8%AF%D9%8A%D8%B3_%D8%A3%D9%88%D8%BA%D8%B3%D8%B7%D9%8A%D9%86_%D8%A8%D9%88%D9%84%D8%A7%D9%8A%D8%A9_%D8%B3%D9%88%D9%82_%D8%A3%D9%87%D8%B1%D8%A7%D8%B3_%D8%8C_%D8%A7%D9%84%D8%AC%D8%B2%D8%A7%D8%A6%D8%B1.jpg',
                 'gallery' => [
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/b/b3/Roman_ruins_of_Saint_Augustin_from_Souk_Ahras_Algeria._%D8%A7%D9%84%D8%A2%D8%AB%D8%A7%D8%B1_%D8%A7%D9%84%D8%B1%D9%88%D9%85%D8%A7%D9%86%D9%8A%D8%A9_%D9%84%D9%84%D9%82%D8%AF%D9%8A%D8%B3_%D8%A3%D9%88%D8%BA%D8%B3%D8%B7%D9%8A%D9%86_%D8%A8%D9%88%D9%84%D8%A7%D9%8A%D8%A9_%D8%B3%D9%88%D9%82_%D8%A3%D9%87%D8%B1%D8%A7%D8%B3_%D8%8C_%D8%A7%D9%84%D8%AC%D8%B2%D8%A7%D8%A6%D8%B1.jpg', 'caption' => 'Ruines romaines liées à saint Augustin'],
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Souk-Ahras.%C3%89glise_Saint-Augustin.jpg/1280px-Souk-Ahras.%C3%89glise_Saint-Augustin.jpg', 'caption' => 'Église Saint-Augustin de Souk Ahras'],
+
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Roman_ruins_of_Saint_Augustin_Souk_Ahras_%28Algeria%29_%D8%A7%D9%84%D8%A2%D8%AB%D8%A7%D8%B1_%D8%A7%D9%84%D8%B1%D9%88%D9%85%D8%A7%D9%86%D9%8A%D8%A9_%D9%84%D9%84%D9%82%D8%AF%D9%8A%D8%B3_%D8%A3%D9%88%D8%BA%D8%B3%D8%B7%D9%8A%D9%86_%D8%A8%D9%88%D9%84%D8%A7%D9%8A%D8%A9_%D8%B3%D9%88%D9%82_%D8%A3%D9%87%D8%B1%D8%A7%D8%B3_%D8%8C_%D8%A7%D9%84%D8%AC%D8%B2%D8%A7%D8%A6%D8%B1.jpg/500px-Roman_ruins_of_Saint_Augustin_Souk_Ahras_%28Algeria%29_%D8%A7%D9%84%D8%A2%D8%AB%D8%A7%D8%B1_%D8%A7%D9%84%D8%B1%D9%88%D9%85%D8%A7%D9%86%D9%8A%D8%A9_%D9%84%D9%84%D9%82%D8%AF%D9%8A%D8%B3_%D8%A3%D9%88%D8%BA%D8%B3%D8%B7%D9%8A%D9%86_%D8%A8%D9%88%D9%84%D8%A7%D9%8A%D8%A9_%D8%B3%D9%88%D9%82_%D8%A3%D9%87%D8%B1%D8%A7%D8%B3_%D8%8C_%D8%A7%D9%84%D8%AC%D8%B2%D8%A7%D8%A6%D8%B1.jpg', 'caption' => 'Vestiges romains de Thagaste'],
                 ],
                 'translations' => [
@@ -544,7 +561,11 @@ class SitesSeeder extends Seeder
                 'opening_hours' => '08h00 - 17h00 — à titre indicatif',
                 'entry_fee' => 'Gratuit (hors spectacles) — à titre indicatif',
                 'image' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/GM_Guelma_Theatre_romain01.jpg/500px-GM_Guelma_Theatre_romain01.jpg',
-                'gallery' => [],
+                'gallery' => [
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Th%C3%A9%C3%A2tre_romain_de_Guelma%2C_Alg%C3%A9rie.jpg/1280px-Th%C3%A9%C3%A2tre_romain_de_Guelma%2C_Alg%C3%A9rie.jpg', 'caption' => 'Théâtre romain de Guelma'],
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/The_Roman_theatre_of_Guelma_01.jpg/1280px-The_Roman_theatre_of_Guelma_01.jpg', 'caption' => 'Gradins du théâtre antique de Guelma'],
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/The_Roman_theatre_of_Guelma_02.jpg/1280px-The_Roman_theatre_of_Guelma_02.jpg', 'caption' => 'Vue générale du théâtre romain'],
+],
                 'translations' => [
                     'fr' => [
                         'name' => 'Calama (Guelma)',
@@ -575,6 +596,9 @@ class SitesSeeder extends Seeder
                 'entry_fee' => 'Gratuit — à titre indicatif',
                 'image' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Caracalla_tebessa_3.jpg/500px-Caracalla_tebessa_3.jpg',
                 'gallery' => [
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/3/3c/Arch_of_Caracalla%2C_Tebessa%2C_North_Africa..jpg', 'caption' => 'Arc de Caracalla à Tébessa'],
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Porte_Caracalla_-_T%C3%A9bessa_%D8%A8%D8%A7%D8%A8_%D9%83%D8%B1%D9%83%D9%84%D8%A7_-_%D8%AA%D8%A8%D8%B3%D8%A9.jpg/1280px-Porte_Caracalla_-_T%C3%A9bessa_%D8%A8%D8%A7%D8%A8_%D9%83%D8%B1%D9%83%D9%84%D8%A7_-_%D8%AA%D8%A8%D8%B3%D8%A9.jpg', 'caption' => 'Porte romaine de Caracalla, Tébessa'],
+
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Porte_Caracalla_et_enceinte_Byzantine_2%2C_Tebessa.jpg/500px-Porte_Caracalla_et_enceinte_Byzantine_2%2C_Tebessa.jpg', 'caption' => 'Le rempart byzantin de Salomon'],
                 ],
                 'translations' => [
@@ -608,6 +632,8 @@ class SitesSeeder extends Seeder
                 'entry_fee' => '100 DA — à titre indicatif',
                 'image' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Ahmed_Bey_Palace_10.jpg/500px-Ahmed_Bey_Palace_10.jpg',
                 'gallery' => [
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Ahmed_Bey_Palace_01.jpg/1280px-Ahmed_Bey_Palace_01.jpg', 'caption' => 'Cour intérieure du palais Ahmed Bey'],
+
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Ahmed_Bey_Palace_09.jpg/500px-Ahmed_Bey_Palace_09.jpg', 'caption' => 'Galerie intérieure'],
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Ahmed_Bey_Palace_05.jpg/500px-Ahmed_Bey_Palace_05.jpg', 'caption' => 'Cour intérieure'],
                 ],
@@ -642,6 +668,9 @@ class SitesSeeder extends Seeder
                 'entry_fee' => '200 DA — à titre indicatif',
                 'image' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Fort_Santa_Cruz_Oran1.jpg/500px-Fort_Santa_Cruz_Oran1.jpg',
                 'gallery' => [
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Fort_Santa_Cruz%2C_Oran_2013.jpg/1280px-Fort_Santa_Cruz%2C_Oran_2013.jpg', 'caption' => 'Vue du fort de Santa Cruz'],
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Fort_Santa_Cruz%2C_Oran_2013-2.jpg/1280px-Fort_Santa_Cruz%2C_Oran_2013-2.jpg', 'caption' => 'Fortification surplombant Oran'],
+
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/ChapelleSantaCruz2.jpeg/500px-ChapelleSantaCruz2.jpeg', 'caption' => 'La chapelle Notre-Dame de Santa Cruz'],
                 ],
                 'translations' => [
@@ -676,6 +705,9 @@ class SitesSeeder extends Seeder
                 'entry_fee' => 'Gratuit (excursion 4x4 en supplément) — à titre indicatif',
                 'image' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/AG_006_large.jpg/500px-AG_006_large.jpg',
                 'gallery' => [
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Ksar_Taghit.jpg/1280px-Ksar_Taghit.jpg', 'caption' => 'Ksar de Taghit et palmeraie'],
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Ksar_Taghit2.jpg/1280px-Ksar_Taghit2.jpg', 'caption' => 'Architecture traditionnelle du ksar de Taghit'],
+
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Marabutto-Taghirt.JPG/500px-Marabutto-Taghirt.JPG', 'caption' => "L'oasis de Taghit"],
                 ],
                 'translations' => [
@@ -708,6 +740,9 @@ class SitesSeeder extends Seeder
                 'entry_fee' => 'Gratuit — à titre indicatif',
                 'image' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Terrasse_de_l%27hotel_Oasis_rouge_de_Timimoun.jpg/500px-Terrasse_de_l%27hotel_Oasis_rouge_de_Timimoun.jpg',
                 'gallery' => [
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/House_in_Timimoun.jpg/1280px-House_in_Timimoun.jpg', 'caption' => 'Maison en pisé rouge à Timimoun'],
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Gourara_Monument_%28Timimoun%29_01.jpg/1280px-Gourara_Monument_%28Timimoun%29_01.jpg', 'caption' => 'Monument du Gourara à Timimoun'],
+
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Oasis_Timimoun.jpg/500px-Oasis_Timimoun.jpg', 'caption' => 'La palmeraie de Timimoun'],
                 ],
                 'translations' => [
@@ -740,6 +775,9 @@ class SitesSeeder extends Seeder
                 'entry_fee' => 'Gratuit — à titre indicatif',
                 'image' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/La_ville_d%27El_Oued_%D9%85%D8%AF%D9%8A%D9%86%D8%A9_%D8%A7%D9%84%D9%88%D8%A7%D8%AF%D9%8A.jpg/500px-La_ville_d%27El_Oued_%D9%85%D8%AF%D9%8A%D9%86%D8%A9_%D8%A7%D9%84%D9%88%D8%A7%D8%AF%D9%8A.jpg',
                 'gallery' => [
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/5/53/El_Oued%2C_la_ville_aux_mille_coupole.jpg', 'caption' => 'El Oued, la ville aux mille coupoles'],
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/7/7d/El_Oued_-_La_Ville_au_mille_Coupole_Vue_G%C3%A9n%C3%A9rale_%28SNED%29.jpg', 'caption' => 'Vue générale d\'El Oued et ses dômes'],
+
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/BASA-3K-7-350-24-El_Oued%2C_Algeria.jpg/500px-BASA-3K-7-350-24-El_Oued%2C_Algeria.jpg', 'caption' => 'El Oued et ses coupoles (photo ancienne)'],
                 ],
                 'translations' => [
@@ -772,6 +810,9 @@ class SitesSeeder extends Seeder
                 'entry_fee' => '100 DA — à titre indicatif',
                 'image' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Fort_au_dessus_du_port_%C3%A0_B%C3%A9ja%C3%AFa_2.jpg/500px-Fort_au_dessus_du_port_%C3%A0_B%C3%A9ja%C3%AFa_2.jpg',
                 'gallery' => [
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/e/ed/Bordj_Moussa.jpeg', 'caption' => 'Fort de Bordj Moussa à Béjaïa'],
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/0/0f/Bordj_Moussa_bejaia.png', 'caption' => 'Vue du fort de Bordj Moussa'],
+
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Bordj_Moussa_bejaia.png/500px-Bordj_Moussa_bejaia.png', 'caption' => 'Le fort-musée Bordj Moussa'],
                 ],
                 'translations' => [
@@ -805,6 +846,8 @@ class SitesSeeder extends Seeder
                 'entry_fee' => 'Gratuit (esplanade) ; tarif symbolique pour le musée — à titre indicatif',
                 'image' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Martyrs_Memorial._Algiers%2C_Algeria.jpg/500px-Martyrs_Memorial._Algiers%2C_Algeria.jpg',
                 'gallery' => [
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Maqam_Echahid_la_nuit%2C_Alger.jpg/1280px-Maqam_Echahid_la_nuit%2C_Alger.jpg', 'caption' => 'Maqam Echahid illuminé la nuit'],
+
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Maqam_Echahid.jpg/500px-Maqam_Echahid.jpg', 'caption' => 'Le monument illuminé la nuit'],
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Monument_of_the_Martyrs_04_Algiers.jpg/500px-Monument_of_the_Martyrs_04_Algiers.jpg', 'caption' => "L'une des trois statues de bronze"],
                 ],
@@ -839,6 +882,8 @@ class SitesSeeder extends Seeder
                 'entry_fee' => 'Gratuit (prière) ; tarif pour la visite du minaret et son ascenseur panoramique — à titre indicatif',
                 'image' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Djama%C3%A2_El_Djaza%C3%AFr_%E2%80%93_The_Great_Mosque_of_Algiers_11.jpg/500px-Djama%C3%A2_El_Djaza%C3%AFr_%E2%80%93_The_Great_Mosque_of_Algiers_11.jpg',
                 'gallery' => [
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Djamaa_El_Djaza%C3%AFr_2.jpg/1280px-Djamaa_El_Djaza%C3%AFr_2.jpg', 'caption' => 'Façade de la Grande Mosquée d\'Alger'],
+
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Mosque_of_Algiers_Golden_dome.jpg/500px-Mosque_of_Algiers_Golden_dome.jpg', 'caption' => 'La coupole de la salle de prière'],
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Grande_Mosqu%C3%A9e_d%27Alger.jpg/500px-Grande_Mosqu%C3%A9e_d%27Alger.jpg', 'caption' => 'Le minaret, le plus haut du monde'],
                 ],
@@ -873,6 +918,9 @@ class SitesSeeder extends Seeder
                 'entry_fee' => 'Gratuit — à titre indicatif',
                 'image' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/DJURDJURA6.jpg/500px-DJURDJURA6.jpg',
                 'gallery' => [
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/DJURDJURA_MOUNTAINS_FROM_EVERYWHERE_1.jpg/1280px-DJURDJURA_MOUNTAINS_FROM_EVERYWHERE_1.jpg', 'caption' => 'Panorama des montagnes du Djurdjura'],
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Massif_of_The_Djurdjura.jpg/1280px-Massif_of_The_Djurdjura.jpg', 'caption' => 'Massif montagneux du Djurdjura'],
+
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Parc_National_Djurdjura%2C_Bouira%2C_Algerie_%22_une_vue_sur_l%27horizon%2C_wilaya_de_bouira%22.jpg/500px-Parc_National_Djurdjura%2C_Bouira%2C_Algerie_%22_une_vue_sur_l%27horizon%2C_wilaya_de_bouira%22.jpg', 'caption' => "Vue sur l'horizon du massif"],
                 ],
                 'translations' => [
@@ -905,6 +953,9 @@ class SitesSeeder extends Seeder
                 'entry_fee' => 'Gratuit — à titre indicatif',
                 'image' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Entr%C3%A9e_du_tombeau_de_Sidi_Boumediene%2C_El_Eubbad%2C_Tlemcen.jpg/500px-Entr%C3%A9e_du_tombeau_de_Sidi_Boumediene%2C_El_Eubbad%2C_Tlemcen.jpg',
                 'gallery' => [
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Entr%C3%A9e_du_tombeau_de_Sidi_Boumediene%2C_El_Eubbad%2C_Tlemcen.jpg/1280px-Entr%C3%A9e_du_tombeau_de_Sidi_Boumediene%2C_El_Eubbad%2C_Tlemcen.jpg', 'caption' => 'Entrée du tombeau de Sidi Boumediene'],
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Historical_passage_in_El-Eubbad%2C_Tlemcen.jpg/1280px-Historical_passage_in_El-Eubbad%2C_Tlemcen.jpg', 'caption' => 'Passage historique du quartier El Eubbad'],
+
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Tlemcen%2C_Sidi_Boumedi%C3%A8ne.jpg/500px-Tlemcen%2C_Sidi_Boumedi%C3%A8ne.jpg', 'caption' => 'Le complexe de Sidi Boumediene'],
                 ],
                 'translations' => [
@@ -937,6 +988,8 @@ class SitesSeeder extends Seeder
                 'entry_fee' => 'Gratuit — à titre indicatif',
                 'image' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/1_Pont_de_Sidi_M%27Cid.JPG/500px-1_Pont_de_Sidi_M%27Cid.JPG',
                 'gallery' => [
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Gorge_du_Rhumel_Constantine_depuis_le_pont_de_Sidi-M%27cid.jpg/1280px-Gorge_du_Rhumel_Constantine_depuis_le_pont_de_Sidi-M%27cid.jpg', 'caption' => 'Gorges du Rhumel vues du pont Sidi M\'Cid'],
+
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Gorges_du_Rhummel_%26_ponts.jpg/500px-Gorges_du_Rhummel_%26_ponts.jpg', 'caption' => 'Les gorges du Rhumel et ses ponts'],
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/2_Pont_de_Sidi_M%27Cid.JPG/500px-2_Pont_de_Sidi_M%27Cid.JPG', 'caption' => 'Le pont Sidi M\'Cid'],
                 ],
@@ -971,6 +1024,9 @@ class SitesSeeder extends Seeder
                 'entry_fee' => 'Gratuit — à titre indicatif',
                 'image' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Mosqu%C3%A9e_de_Mansourah%2C_Tlemcen%2C_2024.jpg/500px-Mosqu%C3%A9e_de_Mansourah%2C_Tlemcen%2C_2024.jpg',
                 'gallery' => [
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/d/d4/Tlemcen%2C_Algeria_-_Ruin_of_Mansoura.jpg', 'caption' => 'Ruines du site mérinide de Mansourah'],
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Ruines_du_minaret_du_Mansoura_%28Tlemcen%29.jpeg', 'caption' => 'Ruines du minaret de Mansourah'],
+
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Mansourah_Mosque_07.jpg/500px-Mansourah_Mosque_07.jpg', 'caption' => 'Le minaret vu de l\'intérieur'],
                 ],
                 'translations' => [
@@ -1004,6 +1060,8 @@ class SitesSeeder extends Seeder
                 'entry_fee' => 'Gratuit — à titre indicatif',
                 'image' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/GM_Parc_national_El_Kala01.jpg/500px-GM_Parc_national_El_Kala01.jpg',
                 'gallery' => [
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Lac_Oubeira%2C_Parc_National_d%27El-Kala%2C_El-Tarf.jpg/1280px-Lac_Oubeira%2C_Parc_National_d%27El-Kala%2C_El-Tarf.jpg', 'caption' => 'Lac Oubeira dans le parc d\'El Kala'],
+
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Lac_tonga_el_kala.JPG/500px-Lac_tonga_el_kala.JPG', 'caption' => 'Le lac Tonga'],
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Blue_Lake._Mahieddine_Boumendjel.jpg/500px-Blue_Lake._Mahieddine_Boumendjel.jpg', 'caption' => 'Le lac Bleu'],
                 ],
@@ -1037,6 +1095,9 @@ class SitesSeeder extends Seeder
                 'entry_fee' => 'Gratuit — à titre indicatif',
                 'image' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Royal_Mausoleum_of_Mauretania_01.jpg/500px-Royal_Mausoleum_of_Mauretania_01.jpg',
                 'gallery' => [
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Le_Mausol%C3%A9e_royal_de_Maur%C3%A9tanie_P9070453.JPG/1280px-Le_Mausol%C3%A9e_royal_de_Maur%C3%A9tanie_P9070453.JPG', 'caption' => 'Vue du mausolée royal de Maurétanie'],
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Le_Mausol%C3%A9e_royal_de_Maur%C3%A9tanie_P9070454.JPG/1280px-Le_Mausol%C3%A9e_royal_de_Maur%C3%A9tanie_P9070454.JPG', 'caption' => 'Détail architectural du mausolée royal'],
+
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/42-14_Mausol%C3%A9e_royal_de_mauretania_2.jpg/500px-42-14_Mausol%C3%A9e_royal_de_mauretania_2.jpg', 'caption' => 'Détail du monument'],
                 ],
                 'translations' => [
@@ -1071,6 +1132,8 @@ class SitesSeeder extends Seeder
                 'entry_fee' => '200 DA (musée) ; ruines en accès libre — à titre indicatif',
                 'image' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Ancient_Roman_theater_%28Cherchell%29_01.jpg/500px-Ancient_Roman_theater_%28Cherchell%29_01.jpg',
                 'gallery' => [
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Ancient_Roman_theater_%28Cherchell%29_01.jpg/1280px-Ancient_Roman_theater_%28Cherchell%29_01.jpg', 'caption' => 'Théâtre romain antique de Cherchell'],
+
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Mosaic_of_the_Three_Graces_%28Cherchell%29.jpg/500px-Mosaic_of_the_Three_Graces_%28Cherchell%29.jpg', 'caption' => 'Mosaïque des Trois Grâces'],
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Aqueduc_de_Cherchell%2C_Side_view.jpg/500px-Aqueduc_de_Cherchell%2C_Side_view.jpg', 'caption' => "Vestiges de l'aqueduc romain"],
                 ],
@@ -1106,6 +1169,9 @@ class SitesSeeder extends Seeder
                 'entry_fee' => 'Gratuit — à titre indicatif',
                 'image' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Notre_Dame_d%27Afrique2_cropped.jpg/500px-Notre_Dame_d%27Afrique2_cropped.jpg',
                 'gallery' => [
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Alger-Notre-Dame-D%27Afrique_Basilique.jpg/1280px-Alger-Notre-Dame-D%27Afrique_Basilique.jpg', 'caption' => 'Basilique Notre-Dame d\'Afrique surplombant la baie'],
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Basilique_Notre-Dame-d%27Afrique_2023_03.jpg/1280px-Basilique_Notre-Dame-d%27Afrique_2023_03.jpg', 'caption' => 'Façade de la basilique Notre-Dame d\'Afrique'],
+
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Notre_Dame_d%27Afrique_at_night.jpg/500px-Notre_Dame_d%27Afrique_at_night.jpg', 'caption' => 'La basilique illuminée la nuit'],
                 ],
                 'translations' => [
@@ -1139,6 +1205,9 @@ class SitesSeeder extends Seeder
                 'entry_fee' => 'Gratuit — à titre indicatif',
                 'image' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Canyon_de_Ghoufi_01.jpg/500px-Canyon_de_Ghoufi_01.jpg',
                 'gallery' => [
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/3/3d/Aur%C3%A8s_Ghoufi.jpg', 'caption' => 'Canyon des Balcons de Ghoufi'],
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/5/53/Aur%C3%A8s_Ghoufi_1.jpg', 'caption' => 'Villages berbères accrochés à la falaise'],
+
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Maisons_de_Ghoufi%2C_Wilaya_de_Batna_3.JPG/500px-Maisons_de_Ghoufi%2C_Wilaya_de_Batna_3.JPG', 'caption' => 'Maisons troglodytes accrochées à la falaise'],
                 ],
                 'translations' => [
@@ -1172,6 +1241,9 @@ class SitesSeeder extends Seeder
                 'entry_fee' => 'Gratuit — à titre indicatif',
                 'image' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/La_Grande_Poste_d%27Alger.jpg/500px-La_Grande_Poste_d%27Alger.jpg',
                 'gallery' => [
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Alger_Grande-Poste_IMG_0269.JPG/1280px-Alger_Grande-Poste_IMG_0269.JPG', 'caption' => 'Façade néo-mauresque de la Grande Poste'],
+                    ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Alger_Grande-Poste_IMG_0863.JPG/1280px-Alger_Grande-Poste_IMG_0863.JPG', 'caption' => 'Vue de la Grande Poste d\'Alger'],
+
                     ['path' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Alger-Grande-Poste-interieur.jpg/500px-Alger-Grande-Poste-interieur.jpg', 'caption' => 'Le hall intérieur richement décoré'],
                 ],
                 'translations' => [
