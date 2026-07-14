@@ -151,6 +151,7 @@
     "audio_rewind": "Rewind",
     "audio_forward": "Forward",
     "audio_speed": "Playback speed",
+    "audio_close": "Close player",
     "key_facts": "Key facts",
     "unesco_since": "UNESCO World Heritage Site since {{year}}",
     "open_in_maps_hint": "Open in Google Maps",
