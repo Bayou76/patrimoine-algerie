@@ -39,6 +39,7 @@ import PrivacyPolicyPage from './pages/PrivacyPolicyPage'
 import DataDeletionPage from './pages/DataDeletionPage'
 import ForgotPasswordPage from './pages/ForgotPasswordPage'
 import ResetPasswordPage from './pages/ResetPasswordPage'
+import ScrollToTop from './components/ScrollToTop'
 import LanguageSwitcher from './components/LanguageSwitcher'
 import ThemeToggle from './components/ThemeToggle'
 import Footer from './components/Footer'
@@ -211,6 +212,7 @@ function App() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <ScrollToTop />
       <Nav />
       <main className="flex-1">
         {/* Routes = déclare quelle page afficher selon l'URL.
