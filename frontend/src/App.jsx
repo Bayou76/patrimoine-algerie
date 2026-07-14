@@ -32,8 +32,13 @@ import AdminSiteEditPage from './pages/AdminSiteEditPage'
 import AdminItinerariesPage from './pages/AdminItinerariesPage'
 import AdminItineraryNewPage from './pages/AdminItineraryNewPage'
 import AdminItineraryEditPage from './pages/AdminItineraryEditPage'
+import AdminUsersPage from './pages/AdminUsersPage'
 import ProposeItineraryPage from './pages/ProposeItineraryPage'
 import MyTripPage from './pages/MyTripPage'
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage'
+import DataDeletionPage from './pages/DataDeletionPage'
+import ForgotPasswordPage from './pages/ForgotPasswordPage'
+import ResetPasswordPage from './pages/ResetPasswordPage'
 import LanguageSwitcher from './components/LanguageSwitcher'
 import ThemeToggle from './components/ThemeToggle'
 import Footer from './components/Footer'
@@ -219,8 +224,12 @@ function App() {
           <Route path="/mon-voyage" element={<MyTripPage />} />
           <Route path="/itineraires/:slug" element={<ItineraryDetailPage />} />
           <Route path="/infos-pratiques" element={<PracticalInfoPage />} />
+          <Route path="/politique-de-confidentialite" element={<PrivacyPolicyPage />} />
+          <Route path="/suppression-des-donnees" element={<DataDeletionPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
+          <Route path="/mot-de-passe-oublie" element={<ForgotPasswordPage />} />
+          <Route path="/reinitialiser-mot-de-passe" element={<ResetPasswordPage />} />
           <Route path="/me" element={<MePage />} />
           <Route path="/admin" element={<AdminPage />} />
           <Route path="/admin/sites/nouveau" element={<AdminSiteNewPage />} />
@@ -228,6 +237,7 @@ function App() {
           <Route path="/admin/itineraires" element={<AdminItinerariesPage />} />
           <Route path="/admin/itineraires/nouveau" element={<AdminItineraryNewPage />} />
           <Route path="/admin/itineraires/:id/modifier" element={<AdminItineraryEditPage />} />
+          <Route path="/admin/utilisateurs" element={<AdminUsersPage />} />
         </Routes>
       </main>
       <Footer />

@@ -47,6 +47,18 @@ export function AuthProvider({ children }) {
     setUser(data.user)
   }
 
+  const loginWithGoogle = async (credential) => {
+    const data = await api.loginWithGoogle(credential)
+    setToken(data.token)
+    setUser(data.user)
+  }
+
+  const loginWithFacebook = async (accessToken) => {
+    const data = await api.loginWithFacebook(accessToken)
+    setToken(data.token)
+    setUser(data.user)
+  }
+
   const logout = async () => {
     // On tente de révoquer le token côté serveur mais on ne bloque pas
     // sur l'erreur : même si le serveur ne répond pas, on doit déconnecter
@@ -57,7 +69,7 @@ export function AuthProvider({ children }) {
   }
 
   return (
-    <AuthContext.Provider value={{ user, loading, register, login, logout }}>
+    <AuthContext.Provider value={{ user, loading, register, login, loginWithGoogle, loginWithFacebook, logout }}>
       {children}
     </AuthContext.Provider>
   )

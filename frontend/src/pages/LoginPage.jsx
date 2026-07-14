@@ -7,9 +7,14 @@
  */
 
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { useAuth } from '../context/AuthContext'
+import GoogleSignInButton from '../components/GoogleSignInButton'
+// FacebookSignInButton retiré temporairement de l'UI (voir git blame) : la
+// connexion Facebook nécessite une vérification business Meta bloquée par
+// l'absence de nom de domaine personnalisé. Le composant et le backend
+// restent en place, prêts à être réaffichés une fois cette étape faite.
 
 function LoginPage() {
   const { login } = useAuth() // Fonction fournie par AuthContext
@@ -55,7 +60,20 @@ function LoginPage() {
         <button type="submit" className="bg-terracotta-500 hover:bg-terracotta-600 text-white font-600 rounded-full px-3 py-2 transition">
           {t('auth.login_button')}
         </button>
+        <Link to="/mot-de-passe-oublie" className="text-sm text-teal-900/70 hover:text-teal-950 text-center">
+          Mot de passe oublié ?
+        </Link>
       </form>
+
+      <div className="flex items-center gap-3 my-5">
+        <div className="flex-1 h-px bg-sand-200" />
+        <span className="text-xs text-teal-900/50 uppercase tracking-wide">ou</span>
+        <div className="flex-1 h-px bg-sand-200" />
+      </div>
+
+      <div className="flex flex-col gap-2">
+        <GoogleSignInButton onError={setError} />
+      </div>
     </div>
   )
 }

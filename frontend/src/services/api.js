@@ -72,8 +72,13 @@ export const api = {
   // Public — auth
   register: (payload) => request('/register', { method: 'POST', body: payload }),
   login: (payload) => request('/login', { method: 'POST', body: payload }),
+  loginWithGoogle: (credential) => request('/auth/google', { method: 'POST', body: { credential } }),
+  loginWithFacebook: (accessToken) =>
+    request('/auth/facebook', { method: 'POST', body: { access_token: accessToken } }),
   logout: () => request('/logout', { method: 'POST' }),
   getCurrentUser: () => request('/user'),
+  forgotPassword: (email) => request('/forgot-password', { method: 'POST', body: { email } }),
+  resetPassword: (payload) => request('/reset-password', { method: 'POST', body: payload }),
 
   // Connecté — reviews et interactions (favoris/visité)
   createReview: (siteId, payload) =>
@@ -116,4 +121,11 @@ export const api = {
     request(`/admin/itineraries/${id}`, { method: 'PUT', body: payload }),
   adminDeleteItinerary: (id) =>
     request(`/admin/itineraries/${id}`, { method: 'DELETE' }),
+
+  // Admin — gestion des utilisateurs
+  adminGetUsers: () => request('/admin/users'),
+  adminUpdateUser: (id, payload) =>
+    request(`/admin/users/${id}`, { method: 'PUT', body: payload }),
+  adminDeleteUser: (id) =>
+    request(`/admin/users/${id}`, { method: 'DELETE' }),
 }

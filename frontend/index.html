@@ -25,6 +25,10 @@
       rel="stylesheet"
     />
 
+    <!-- Google Identity Services : fournit window.google.accounts.id, utilisé
+         par GoogleSignInButton pour afficher le bouton « Se connecter avec Google ». -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
     <!-- Google Analytics (GA4). send_page_view désactivé car Athar est une
          SPA (React Router) : les vues de page sont envoyées manuellement à
          chaque changement de route (voir src/utils/analytics.js), sinon

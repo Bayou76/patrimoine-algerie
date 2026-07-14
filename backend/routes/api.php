@@ -13,11 +13,15 @@
 
 use App\Http\Controllers\Api\AdminItineraryController;
 use App\Http\Controllers\Api\AdminSiteController;
+use App\Http\Controllers\Api\AdminUserController;
 use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\Api\FacebookAuthController;
+use App\Http\Controllers\Api\GoogleAuthController;
 use App\Http\Controllers\Api\InteractionController;
 use App\Http\Controllers\Api\ItineraryController;
 use App\Http\Controllers\Api\MeController;
 use App\Http\Controllers\Api\MyTripController;
+use App\Http\Controllers\Api\PasswordResetController;
 use App\Http\Controllers\Api\ReviewController;
 use App\Http\Controllers\Api\SiteController;
 use App\Http\Controllers\Api\TimelineController;
@@ -33,6 +37,10 @@ Route::get('/itineraries/{slug}', [ItineraryController::class, 'show']);
 
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
+Route::post('/auth/google', [GoogleAuthController::class, 'login']);
+Route::post('/auth/facebook', [FacebookAuthController::class, 'login']);
+Route::post('/forgot-password', [PasswordResetController::class, 'forgotPassword']);
+Route::post('/reset-password', [PasswordResetController::class, 'resetPassword']);
 
 // --- Routes protégées : nécessitent un token Sanctum valide ---
 // Le middleware auth:sanctum vérifie le header Authorization avant d'exécuter
@@ -75,5 +83,9 @@ Route::middleware('auth:sanctum')->group(function () {
         Route::post('/itineraries', [AdminItineraryController::class, 'store']);
         Route::put('/itineraries/{itinerary}', [AdminItineraryController::class, 'update']);
         Route::delete('/itineraries/{itinerary}', [AdminItineraryController::class, 'destroy']);
+
+        Route::get('/users', [AdminUserController::class, 'index']);
+        Route::put('/users/{user}', [AdminUserController::class, 'update']);
+        Route::delete('/users/{user}', [AdminUserController::class, 'destroy']);
     });
 });

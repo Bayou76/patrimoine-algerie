@@ -112,6 +112,12 @@ function AdminPage() {
             🗺️ Itinéraires
           </Link>
           <Link
+            to="/admin/utilisateurs"
+            className="bg-teal-800 hover:bg-teal-900 text-white font-600 rounded-full px-4 py-2 transition"
+          >
+            👥 Utilisateurs
+          </Link>
+          <Link
             to="/admin/sites/nouveau"
             className="bg-terracotta-500 hover:bg-terracotta-600 text-white font-600 rounded-full px-4 py-2 transition"
           >

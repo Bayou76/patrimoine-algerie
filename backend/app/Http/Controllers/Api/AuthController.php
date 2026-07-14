@@ -3,9 +3,11 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Mail\WelcomeEmail;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Validation\ValidationException;
 
 /**
@@ -32,6 +34,14 @@ class AuthController extends Controller
         // Le mot de passe est automatiquement hashé grâce au cast 'password' => 'hashed'
         // défini dans le modèle User.
         $user = User::create($validated);
+
+        // Best-effort : un souci d'envoi (mailbox down, credentials invalides...)
+        // ne doit jamais empêcher la création du compte.
+        try {
+            Mail::to($user->email)->send(new WelcomeEmail($user));
+        } catch (\Throwable $e) {
+            report($e);
+        }
 
         // On crée un token Sanctum à la volée. plainTextToken = le token en clair,
         // à ne renvoyer qu'ici (après il n'existe que hashé en base).

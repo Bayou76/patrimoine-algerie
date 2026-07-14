@@ -19,7 +19,7 @@ use Laravel\Sanctum\HasApiTokens;
  * HasApiTokens (Sanctum) : permet de générer des tokens Bearer pour l'API.
  * C'est ce qui authentifie le frontend React auprès du backend Laravel.
  */
-#[Fillable(['name', 'email', 'password', 'is_admin'])]
+#[Fillable(['name', 'email', 'password', 'is_admin', 'google_id', 'facebook_id'])]
 #[Hidden(['password', 'remember_token'])] // Ces champs ne sortent jamais en JSON
 class User extends Authenticatable
 {

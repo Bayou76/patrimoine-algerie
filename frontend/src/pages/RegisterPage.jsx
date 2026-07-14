@@ -10,6 +10,11 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { useAuth } from '../context/AuthContext'
+import GoogleSignInButton from '../components/GoogleSignInButton'
+// FacebookSignInButton retiré temporairement de l'UI (voir git blame) : la
+// connexion Facebook nécessite une vérification business Meta bloquée par
+// l'absence de nom de domaine personnalisé. Le composant et le backend
+// restent en place, prêts à être réaffichés une fois cette étape faite.
 
 function RegisterPage() {
   const { register } = useAuth()
@@ -81,6 +86,16 @@ function RegisterPage() {
           {t('auth.register_button')}
         </button>
       </form>
+
+      <div className="flex items-center gap-3 my-5">
+        <div className="flex-1 h-px bg-sand-200" />
+        <span className="text-xs text-teal-900/50 uppercase tracking-wide">ou</span>
+        <div className="flex-1 h-px bg-sand-200" />
+      </div>
+
+      <div className="flex flex-col gap-2">
+        <GoogleSignInButton onError={setError} />
+      </div>
     </div>
   )
 }

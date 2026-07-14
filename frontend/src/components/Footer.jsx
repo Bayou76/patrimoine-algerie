@@ -69,6 +69,9 @@ function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-6xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-sand-200/60">
           <p>© {new Date().getFullYear()} Athar — {t('footer.credit')}</p>
+          <Link to="/politique-de-confidentialite" className="hover:text-terracotta-400 transition">
+            Politique de confidentialité
+          </Link>
           <p>
             {t('footer.designed_by', { name: 'Baya SEBIA' })} 🇩🇿
           </p>
