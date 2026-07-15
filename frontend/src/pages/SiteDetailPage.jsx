@@ -34,6 +34,7 @@ import DirectionsButton from '../components/DirectionsButton'
 import StreetViewButton from '../components/StreetViewButton'
 import ShareButton from '../components/ShareButton'
 import AudioGuideButton from '../components/AudioGuideButton'
+import AffiliateButtons from '../components/AffiliateButtons'
 import KeyFacts from '../components/KeyFacts'
 import GalleryLightbox from '../components/GalleryLightbox'
 import { usePageMeta, buildSiteJsonLd } from '../utils/pageMeta'
@@ -185,6 +186,10 @@ function SiteDetailPage() {
             <ShareButton
               title={translation?.name}
               text={translation?.description}
+            />
+            <AffiliateButtons
+              activityUrl={site.affiliate_activity_url}
+              hotelUrl={site.affiliate_hotel_url}
             />
             <AudioGuideButton
               text={[translation?.description, translation?.history].filter(Boolean).join('. ')}

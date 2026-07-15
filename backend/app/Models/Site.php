@@ -27,6 +27,8 @@ class Site extends Model
         'opening_hours',
         'entry_fee',
         'unesco_year',
+        'affiliate_activity_url',
+        'affiliate_hotel_url',
     ];
 
     // Conversions automatiques de types à la lecture/écriture.

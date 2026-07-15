@@ -92,6 +92,8 @@ class SiteController extends Controller
             'opening_hours' => $site->opening_hours,
             'entry_fee' => $site->entry_fee,
             'unesco_year' => $site->unesco_year,
+            'affiliate_activity_url' => $site->affiliate_activity_url,
+            'affiliate_hotel_url' => $site->affiliate_hotel_url,
             'translations' => $site->translations->map(fn ($translation) => [
                 'language_code' => $translation->language_code,
                 'name' => $translation->name,

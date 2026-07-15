@@ -127,6 +127,8 @@ function AdminSiteForm({ initial, onSubmit, submitLabel }) {
     opening_hours: initial?.opening_hours ?? '',
     entry_fee: initial?.entry_fee ?? '',
     unesco_year: initial?.unesco_year ?? '',
+    affiliate_activity_url: initial?.affiliate_activity_url ?? '',
+    affiliate_hotel_url: initial?.affiliate_hotel_url ?? '',
     translations: buildTranslations(),
     images: initial?.images?.length ? [...initial.images] : [],
     timeline: buildTimeline(),
@@ -272,6 +274,22 @@ function AdminSiteForm({ initial, onSubmit, submitLabel }) {
             onChange={(v) => set('unesco_year', v)}
             placeholder="1982"
           />
+          <div className="sm:col-span-2">
+            <TextField
+              label="Lien affilié GetYourGuide (activité) — laisser vide si aucun"
+              value={form.affiliate_activity_url}
+              onChange={(v) => set('affiliate_activity_url', v)}
+              placeholder="https://gyg.me/..."
+            />
+          </div>
+          <div className="sm:col-span-2">
+            <TextField
+              label="Lien affilié Booking.com (hôtels) — laisser vide si aucun"
+              value={form.affiliate_hotel_url}
+              onChange={(v) => set('affiliate_hotel_url', v)}
+              placeholder="https://www.booking.com/..."
+            />
+          </div>
         </div>
       </section>
 

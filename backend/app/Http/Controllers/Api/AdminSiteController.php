@@ -128,6 +128,8 @@ class AdminSiteController extends Controller
             'opening_hours' => $site->opening_hours,
             'entry_fee' => $site->entry_fee,
             'unesco_year' => $site->unesco_year,
+            'affiliate_activity_url' => $site->affiliate_activity_url,
+            'affiliate_hotel_url' => $site->affiliate_hotel_url,
             // keyBy('language_code') : { fr: {...}, ar: {...}, en: {...} }
             // pour que le frontend accède directement à translations.fr.name.
             'translations' => $site->translations->keyBy('language_code')->map(fn ($t) => [
@@ -172,6 +174,8 @@ class AdminSiteController extends Controller
             'opening_hours' => ['nullable', 'string'],
             'unesco_year' => ['nullable', 'integer', 'min:1900', 'max:2100'],
             'entry_fee' => ['nullable', 'string'],
+            'affiliate_activity_url' => ['nullable', 'url', 'max:255'],
+            'affiliate_hotel_url' => ['nullable', 'url', 'max:255'],
             'translations' => ['required', 'array'],
             'images' => ['nullable', 'array'],
             'images.*.path' => ['required', 'string'],
@@ -208,7 +212,7 @@ class AdminSiteController extends Controller
     private function siteAttributes(array $data): array
     {
         return collect($data)
-            ->only(['slug', 'category', 'wilaya', 'latitude', 'longitude', 'image_path', 'opening_hours', 'entry_fee', 'unesco_year'])
+            ->only(['slug', 'category', 'wilaya', 'latitude', 'longitude', 'image_path', 'opening_hours', 'entry_fee', 'unesco_year', 'affiliate_activity_url', 'affiliate_hotel_url'])
             ->toArray();
     }
 
