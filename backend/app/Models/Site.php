@@ -27,15 +27,17 @@ class Site extends Model
         'opening_hours',
         'entry_fee',
         'unesco_year',
-        'affiliate_activity_url',
+        'affiliate_activities',
         'affiliate_hotel_url',
     ];
 
     // Conversions automatiques de types à la lecture/écriture.
-    // Sans ce cast, latitude/longitude seraient des strings côté PHP.
+    // Sans ce cast, latitude/longitude seraient des strings côté PHP, et
+    // affiliate_activities un texte JSON brut plutôt qu'un vrai tableau PHP.
     protected $casts = [
         'latitude' => 'float',
         'longitude' => 'float',
+        'affiliate_activities' => 'array',
     ];
 
     // --- Relations ---

@@ -35,6 +35,7 @@ function slugify(name) {
 const emptyTranslation = () => ({ name: '', description: '', history: '', visit_info: '' })
 const emptyEventTranslation = () => ({ period_label: '', title: '', description: '' })
 const emptyImage = () => ({ path: '', caption: '' })
+const emptyActivity = () => ({ label: '', url: '' })
 const emptyEvent = () => ({
   year: '',
   // Object.fromEntries : construit un objet depuis un tableau de [clé, valeur].
@@ -127,7 +128,7 @@ function AdminSiteForm({ initial, onSubmit, submitLabel }) {
     opening_hours: initial?.opening_hours ?? '',
     entry_fee: initial?.entry_fee ?? '',
     unesco_year: initial?.unesco_year ?? '',
-    affiliate_activity_url: initial?.affiliate_activity_url ?? '',
+    affiliate_activities: initial?.affiliate_activities?.length ? [...initial.affiliate_activities] : [],
     affiliate_hotel_url: initial?.affiliate_hotel_url ?? '',
     translations: buildTranslations(),
     images: initial?.images?.length ? [...initial.images] : [],
@@ -153,6 +154,13 @@ function AdminSiteForm({ initial, onSubmit, submitLabel }) {
       const images = [...prev.images]
       images[idx] = { ...images[idx], [field]: value }
       return { ...prev, images }
+    })
+  }
+  const setActivity = (idx, field, value) => {
+    setForm((prev) => {
+      const affiliate_activities = [...prev.affiliate_activities]
+      affiliate_activities[idx] = { ...affiliate_activities[idx], [field]: value }
+      return { ...prev, affiliate_activities }
     })
   }
   const setEvent = (idx, lang, field, value) => {
@@ -275,12 +283,48 @@ function AdminSiteForm({ initial, onSubmit, submitLabel }) {
             placeholder="1982"
           />
           <div className="sm:col-span-2">
-            <TextField
-              label="Lien affilié GetYourGuide (activité) — laisser vide si aucun"
-              value={form.affiliate_activity_url}
-              onChange={(v) => set('affiliate_activity_url', v)}
-              placeholder="https://gyg.me/..."
-            />
+            <div className="flex justify-between items-center mb-2">
+              <label className="text-sm font-600 text-teal-950">
+                Liens affiliés GetYourGuide (activités) — un par offre, ex. « petit budget » / « premium avec déjeuner »
+              </label>
+              <button
+                type="button"
+                onClick={() => set('affiliate_activities', [...form.affiliate_activities, emptyActivity()])}
+                className="text-sm bg-terracotta-500 hover:bg-terracotta-600 text-white font-600 px-3 py-1.5 rounded-full transition"
+              >
+                + Ajouter un lien
+              </button>
+            </div>
+            <div className="flex flex-col gap-3">
+              {form.affiliate_activities.map((activity, idx) => (
+                <div key={idx} className="flex gap-3 items-start">
+                  <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-2">
+                    <TextField
+                      label="Libellé"
+                      value={activity.label}
+                      onChange={(v) => setActivity(idx, 'label', v)}
+                      placeholder="Petit budget"
+                    />
+                    <TextField
+                      label="URL"
+                      value={activity.url}
+                      onChange={(v) => setActivity(idx, 'url', v)}
+                      placeholder="https://gyg.me/..."
+                    />
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => set('affiliate_activities', form.affiliate_activities.filter((_, i) => i !== idx))}
+                    className="mt-6 text-xs text-terracotta-600 hover:text-terracotta-700 font-600"
+                  >
+                    Retirer
+                  </button>
+                </div>
+              ))}
+              {form.affiliate_activities.length === 0 && (
+                <p className="text-sm text-teal-900/60">Aucun lien affilié.</p>
+              )}
+            </div>
           </div>
           <div className="sm:col-span-2">
             <TextField

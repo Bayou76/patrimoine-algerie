@@ -188,7 +188,7 @@ function SiteDetailPage() {
               text={translation?.description}
             />
             <AffiliateButtons
-              activityUrl={site.affiliate_activity_url}
+              activities={site.affiliate_activities}
               hotelUrl={site.affiliate_hotel_url}
             />
             <AudioGuideButton
